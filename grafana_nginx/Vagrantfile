@@ -1,0 +1,56 @@
+Vagrant.configure("2") do |config|
+  # cria variáveis com scripts individuais de cada máquina
+  $script_server_1 = <<-SHELL
+    sudo apt-get -y install nginx
+    curl localhost
+  SHELL
+
+  $script_server_2 = <<-SHELL
+    # instalando grafana OSS
+    sudo apt-get install -y apt-transport-https
+    sudo apt-get install -y software-properties-common wget
+    sudo wget -q -O /usr/share/keyrings/grafana.key https://packages.grafana.com/gpg.key
+    echo "deb [signed-by=/usr/share/keyrings/grafana.key] https://packages.grafana.com/oss/deb stable main" | sudo tee -a /etc/apt/sources.list.d/grafana.list
+    sudo apt-get update
+    sudo apt-get install -y grafana
+
+    # iniciando grafana e o configurando para que inicie junto a máquina virtual
+    sudo systemctl daemon-reload
+    sudo systemctl start grafana-server
+    sudo systemctl enable grafana-server.service
+  SHELL
+
+  # define configurações individuas das máquinas
+  config.vm.define "server_1" do |server_1|
+    server_1.vm.box = "ubuntu/trusty64"
+    server_1.vm.provision "shell", inline: $script_server_1
+    server_1.vm.network "forwarded_port", guest: 80, host: 3002
+    server_1.vm.provider "virtualbox" do |vb|
+      vb.memory = "1024"
+      vb.cpus = "2"
+      vb.name = "server1_ubuntu_nginx"
+    end
+  end
+
+  config.vm.define "server_2" do |server_2|
+    server_2.vm.box = "generic/debian9"
+    server_2.vm.network "forwarded_port", guest: 3000, host: 3000
+    server_2.vm.provision "shell", inline: $script_server_2
+    server_2.vm.provider "virtualbox" do |vb|
+      vb.memory = "1024"
+      vb.cpus = "2"
+      vb.name = "server2_debian_grafana"
+    end
+  end
+
+  # configurações gerais
+  config.vm.network "private_network", type: "dhcp"
+    config.vm.provision "shell", inline: <<-SHELL
+    sudo apt-get -y update && sudo apt-get -y upgrade
+  SHELL
+
+  # evita erro causado por diferentes versões de guest additions no vagrant
+  if Vagrant.has_plugin?("vagrant-vbguest")
+    config.vbguest.auto_update = false  
+  end
+end
