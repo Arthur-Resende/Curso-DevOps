@@ -1,0 +1,14 @@
+# docker run -itd --name telegraf telegraf
+# docker run --name influxdb -dp 8086:8086 influxdb
+# docker container run --name grafana -dp 3000:3000 grafana/grafana-enterprise
+services:
+  grafana:
+    image: grafana/grafana-enterprise
+    ports:
+      - "3000:3000"
+  influxdb:
+    image: influxdb
+    ports:
+      - "8086:8086"
+  telegraf:
+    image: telegraf

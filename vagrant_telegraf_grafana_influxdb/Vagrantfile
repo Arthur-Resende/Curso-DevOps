@@ -1,0 +1,65 @@
+$influxdb = <<-'SCRIPT'
+  sudo apt update
+  wget -q https://repos.influxdata.com/influxdb.key
+  echo '23a1c8836f0afc5ed24e0486339d7cc8f6790b83886c4c96995b88a061c5bb5d influxdb.key' | sha256sum -c && cat influxdb.key | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/influxdb.gpg > /dev/null
+  echo 'deb [signed-by=/etc/apt/trusted.gpg.d/influxdb.gpg] https://repos.influxdata.com/debian stable main' | sudo tee /etc/apt/sources.list.d/influxdata.list
+  sudo apt-get update -y && sudo apt-get install -y influxdb2
+  sudo service influxdb start
+SCRIPT
+
+$telegraf = <<-'SCRIPT'
+  wget -q https://repos.influxdata.com/influxdb.key
+  echo '23a1c8836f0afc5ed24e0486339d7cc8f6790b83886c4c96995b88a061c5bb5d influxdb.key' | sha256sum -c && cat influxdb.key | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/influxdb.gpg > /dev/null
+  echo 'deb [signed-by=/etc/apt/trusted.gpg.d/influxdb.gpg] https://repos.influxdata.com/debian stable main' | sudo tee /etc/apt/sources.list.d/influxdata.list
+  sudo apt-get update -y && sudo apt-get install -y telegraf
+SCRIPT
+
+$grafana = <<-'SCRIPT'
+  sudo apt-get install -y apt-transport-https
+  sudo apt-get install -y software-properties-common wget
+  sudo wget -q -O /usr/share/keyrings/grafana.key https://packages.grafana.com/gpg.key
+  echo "deb [signed-by=/usr/share/keyrings/grafana.key] https://packages.grafana.com/enterprise/deb stable main" | sudo tee -a /etc/apt/sources.list.d/grafana.list
+  sudo apt-get update -y
+  sudo apt-get install -y grafana-enterprise
+  sudo systemctl daemon-reload
+  sudo systemctl start grafana-server
+SCRIPT
+
+Vagrant.configure("2") do |config|
+  config.vm.define "influxdb" do |ubuntu|
+    ubuntu.vm.box = "hashicorp/bionic64"
+    ubuntu.vm.network "forwarded_port", guest: 8086, host: 8086
+    ubuntu.vm.network "private_network", type: "dhcp"
+    ubuntu.vm.provider "virtualbox" do |vb|
+      vb.name = "banco_dados"
+      vb.memory = 512
+      vb.cpus = 1
+    end
+    
+    ubuntu.vm.provision "shell", inline: $influxdb
+  end
+
+  config.vm.define "telegraf" do |ubuntu2|
+    ubuntu2.vm.box = "hashicorp/bionic64"
+    ubuntu2.vm.network "private_network", type: "dhcp"
+    ubuntu2.vm.provider "virtualbox" do |vb|
+      vb.name = "telegraf"
+      vb.memory = 512
+      vb.cpus = 1
+    end
+
+    ubuntu2.vm.provision "shell", inline: $telegraf
+  end
+
+  config.vm.define "grafana" do |ubuntu3|
+    ubuntu3.vm.box = "hashicorp/bionic64"
+    ubuntu3.vm.network "forwarded_port", guest: 3000, host: 3000
+    ubuntu3.vm.network "private_network", type: "dhcp"
+    ubuntu3.vm.provider "virtualbox" do |vb|
+      vb.name = "grafana"
+      vb.memory = 512
+      vb.cpus = 1
+    end
+    ubuntu3.vm.provision "shell", inline: $grafana
+  end
+end
