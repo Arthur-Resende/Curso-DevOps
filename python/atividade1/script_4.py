@@ -1,16 +1,9 @@
 valor = input("Escreva um valor (numerico ou não) qualquer: ")
+
 # verificando caracteristicas
 numerico = valor.isnumeric()
-
-alfabetico = False
-for char in valor:
-    if char.isnumeric():
-        alfabetico = False
-        break
-    else:
-        alfabetico = True
-
-alfanumerico = not (numerico or alfabetico)
+alfabetico = valor.isalpha()
+alfanumerico = not numerico and not alfabetico
 maiuscula = valor.isupper()
 minuscula = valor.islower()
 capitalizada = True if valor[0].isupper() else False
@@ -24,7 +17,7 @@ elif numerico:
     print(type(int(valor)))
 else:
     tipo_char = "alfabetico"
-    print(type(valor)) 
+    print(type(valor))
 
 # Escrevendo capitalização
 if capitalizada:
