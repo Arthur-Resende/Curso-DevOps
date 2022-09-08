@@ -8,6 +8,6 @@ triplo = numero * 3
 raiz_quadrada = math.sqrt(numero)
 
 # Escrevendo valores calculados
-print("Dobro: " + str(dobro))
-print("triplo: " + str(triplo))
-print("Raiz quadrada: " + str(raiz_quadrada))
+print("Dobro: %d" %dobro)
+print("triplo: %d" %triplo)
+print("Raiz quadrada: %5.2f" %raiz_quadrada)
