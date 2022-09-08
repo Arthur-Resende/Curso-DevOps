@@ -1,4 +1,3 @@
-# Crie um algorítmo que leia um número e mostre o seu dobro, triplo e raiz quadrada.
 import math
 
 # Recebendo e calculando valores
