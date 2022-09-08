@@ -1,3 +1,5 @@
+print("Esse programa recebe as notas de um aluno e retorna a média calculada./n")
+
 # Declarando variáveis
 falta_notas = True
 nota_total = 0
