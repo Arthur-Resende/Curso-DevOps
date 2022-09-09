@@ -1,4 +1,10 @@
-# Faça um algoritmo que leia o preço de um produto e mostre seu novo preço, com 5% de desconto.
-preco = float(input("Precço: "))
+while True:
+    try:
+        preco = float(input("Preço: "))
+    except:
+        print("Insira um valor numério")
+        continue
+    break
+
 desconto = 0.05 # float(input("Desconto: "))/100
 print(preco - (preco * desconto))
