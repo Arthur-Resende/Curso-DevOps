@@ -1,4 +1,4 @@
-frase = input("Frase: ")
+frase = input("Frase: ").lower()
 primeiro_a = frase.find('a')
 
 # encontra index do primeiro a na frase invertida
