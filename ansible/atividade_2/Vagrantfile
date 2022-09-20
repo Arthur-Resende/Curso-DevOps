@@ -1,0 +1,23 @@
+Vagrant.configure("2") do |config|
+  config.vm.box = "generic/ubuntu1804"
+  config.vm.synced_folder ".", "/vagrant"
+  config.vm.provider "virtualbox" do |v|
+    v.memory = 1024
+    v.cpus = 2
+  end
+  config.vm.provision "shell", inline: <<-SCRIPT
+    sudo apt-get update -y
+    sudo apt-get upgrade -y
+    sudo apt-get install -y python3.9
+    sudo apt-get install -y python3-pip
+  SCRIPT
+  config.vm.define "master" do |master|
+    master.vm.network "private_network", ip: "192.168.56.30"
+  end
+  config.vm.define "slave1" do |slave1|
+    slave1.vm.network "private_network", ip: "192.168.56.33"
+  end
+  config.vm.define "slave2" do |slave2|
+    slave2.vm.network "private_network", ip: "192.168.56.32"
+  end
+end
