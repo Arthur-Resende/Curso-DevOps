@@ -4,20 +4,16 @@
   become: true
   vars:
     - base_path: /opt
-    - arquivos:
-      - a
-      - b
-      - c
-      - d
+    - arquivos: ['a', 'b', 'c', 'd']
 
   tasks:
     - name: criar pastas A, B, C e D
-      ansible.builtin.file:
+      file:
         path:  "{{base_path}}/{{item}}"
         state: directory
         recurse: yes
         mode: 0755
-      loop: [A,B,C,D]
+      loop: ['A', 'B', 'C', 'D']
 
     - name: criar arquivos a, b, c e d com extenção txt
       ansible.builtin.file:

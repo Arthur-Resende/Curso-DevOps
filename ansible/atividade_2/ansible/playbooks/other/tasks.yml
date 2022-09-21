@@ -1,0 +1,4 @@
+---
+- debug:
+    msg: esse arquivos está fora do playbook
+...

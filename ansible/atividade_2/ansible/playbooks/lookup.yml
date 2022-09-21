@@ -1,0 +1,29 @@
+---
+- hosts: atividade
+  gather_facts: false
+  vars:
+    servidores: 
+      - "slave1"
+      - "slave2"
+
+  tasks:
+    - set_fact:
+        server_hash: "{{ lookup('file', '/home/ansible/HASH').split('\n') }}"
+
+    - debug:
+        var: server_hash
+
+    - name: criar novo inventário dinâmico
+      add_host:
+        group: novo_inventario
+        name: "{{ item.0 }}"
+        hash_servidor: "{{ item.1 }}"
+      with_together:
+        - "{{ servidores }}"
+        - "{{ server_hash }}"
+
+- hosts: novo_inventario
+  gather_facts: false
+  tasks:
+    - include_tasks: playbook_2.yml
+...

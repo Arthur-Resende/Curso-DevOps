@@ -1,0 +1,16 @@
+---
+- uri:
+    url: "https://pokeapi.co/api/v2/pokemon/{{ pokemon }}"
+  register: resultado
+
+- debug:
+    msg:
+      - "Conexão estabelecida com sucesso"
+      - "Connection: {{resultado.connection}}"
+  when: resultado.status == 200
+
+- debug:
+    msg:
+      - "nome: {{ resultado.json.name }}"
+      - "habilidade: {{ resultado.json.abilities[0].ability.name }}"
+...
