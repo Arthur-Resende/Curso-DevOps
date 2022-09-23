@@ -1,0 +1,14 @@
+---
+- hosts: atividade
+  gather_facts: false
+  tasks:
+    - debug:
+        msg: "{{ variavel }}"
+      loop:
+        - a
+        - b
+        - c
+        - d
+      loop_control:
+        loop_var: variavel
+...

@@ -1,0 +1,20 @@
+---
+- hosts: atividade
+  gather_facts: false
+  vars_files:
+    - variaveis.yml
+    - senhas.yml
+
+  tasks:
+    - set_fact:
+        numero: 1
+        frase: ola tudo bem
+
+    - include_tasks: tasks.yml
+
+    - debug:
+        msg:
+          - "{{ numero | type_debug }}"
+          - "{{ username }}"
+          - "{{ senhas }}"
+...

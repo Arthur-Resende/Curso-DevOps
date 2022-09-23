@@ -1,0 +1,19 @@
+---
+- hosts: webservers
+  gather_facts: False
+  become: True
+
+  tasks:
+    - name: instalando wget em ambas as máquinas
+      apt:
+        name: wget
+        state: present
+
+    - name: intalando e configurando grafana na slave_machine_1
+      include_tasks: install_grafana.yml
+      when: inventory_hostname == 'slave_machine_1'
+
+    - name: instalando influxdb na slave_machine_2
+      include_tasks: install_influxdb.yml
+      when: inventory_hostname == 'slave_machine_2'
+...

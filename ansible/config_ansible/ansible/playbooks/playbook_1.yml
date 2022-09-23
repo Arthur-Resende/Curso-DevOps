@@ -1,0 +1,29 @@
+- name: meu playbook
+  hosts: atividade
+  gather_facts: false
+  become: true
+  vars:
+    - base_path: /opt
+    - arquivos: ['a', 'b', 'c', 'd']
+
+  tasks:
+    - name: criar pastas A, B, C e D
+      file:
+        path:  "{{base_path}}/{{item}}"
+        state: directory
+        recurse: yes
+        mode: 0755
+      loop: ['A', 'B', 'C', 'D']
+
+    - name: criar arquivos a, b, c e d com extenção txt
+      ansible.builtin.file:
+        path:  "{{base_path}}/A/{{item}}.txt"
+        state: touch
+      loop: "{{arquivos}}"
+
+    - name: criar links para arquivos da pasta A na pasta C
+      ansible.builtin.file:
+        src: "{{base_path}}/A/{{item}}.txt"
+        path:  "{{base_path}}/C/{{item}}_link"
+        state: link
+      loop: "{{arquivos}}"

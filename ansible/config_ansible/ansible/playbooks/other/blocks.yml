@@ -1,0 +1,26 @@
+---
+- hosts: all
+  gather_facts: false
+  vars:
+    servidor: "slave_machine"
+
+  tasks:
+    - add_host:
+        groups: novo_inventario
+        name: "{{ servidor }}"
+
+- hosts: novo_inventario
+  gather_facts: false
+
+  tasks:
+    - block:
+        - debug:
+            msg: "{{ inventory_hostname }}"
+        - fail:
+            msg: "execução falhou"
+      rescue:
+        - debug:
+            msg: "registrando falha do servidor"
+        - shell: "echo {{ inventory_hostname }} >> "
+          delegate_to: localhost
+...

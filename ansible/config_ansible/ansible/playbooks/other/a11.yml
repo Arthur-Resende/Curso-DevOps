@@ -1,0 +1,30 @@
+---
+- hosts: localhost
+  gather_facts: false
+  vars:
+    servidor: "slave_machine"
+
+  tasks:
+    - debug:
+        msg: "{{ inventory_hostname }}"
+
+    - set_fact:
+        server_hash: "{{ lookup('file', '/home/ansible/HASH').split('\n') }}"
+
+    - debug:
+        msg: "{{ server_hash }}"
+
+    - add_host:
+        groups: novo_inventario
+        name: "{{ servidor }}"
+        hash_servidor: "{{ server_hash }}"
+
+- hosts: novo_inventario
+  gather_facts: false
+
+  tasks:
+    - debug:
+        msg: "{{ inventory_hostname }}"
+
+    - shell: "echo '{{ hash_servidor }}' > /home/ansible/HASH"
+... 

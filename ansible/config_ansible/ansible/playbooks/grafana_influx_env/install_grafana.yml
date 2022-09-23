@@ -1,0 +1,32 @@
+---
+- apt:
+    name: "{{ package }}"
+    state: present
+  loop:
+    - apt-transport-https
+    - software-properties-common
+  loop_control:
+    loop_var: package
+
+- stat:
+    path: /etc/apt/sources.list.d/grafana.list
+  register: stat_result
+
+- shell: "{{ comand }}"
+  loop:
+    - "wget -q -O /usr/share/keyrings/grafana.key https://packages.grafana.com/gpg.key"
+    - 'echo "deb [signed-by=/usr/share/keyrings/grafana.key] https://packages.grafana.com/enterprise/deb stable main" | sudo tee -a /etc/apt/sources.list.d/grafana.list'
+  loop_control:
+    loop_var: comand
+  when: stat_result.stat.exists == false
+
+- apt:
+    name: grafana-enterprise
+    update_cache: yes
+    state: present
+
+- service:
+    name: grafana-server
+    state: started
+    enabled: yes
+...
