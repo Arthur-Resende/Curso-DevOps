@@ -1,0 +1,5 @@
+DONE criar maquina virtual com ubuntu
+DONE instalar nginx e permitir acesso ao nginx pelo host
+DONE trocar arquivo html do nginx usando arquivo em pasta no host
+DONE criar vagrantfile que instale nginx automaticamente
+--antes o objetivo era instalar e configurar nginx, mas ao permitir compartilhamento de pasta apt não consegue instalar nginx, é necessário realizar configuração apos instalação
