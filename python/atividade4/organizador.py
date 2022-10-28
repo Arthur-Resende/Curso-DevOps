@@ -1,4 +1,5 @@
 import os
+from unicodedata import name
 
 def define_tipo_arquivo():
     arquivos = []
@@ -7,7 +8,7 @@ def define_tipo_arquivo():
     for arquivo in arquivos_downloads:
         if arquivo.is_file() == True:
             arquivos.append(arquivo.name)
-        else:
+        elif arquivo.name != "pastas" and arquivo.name != "arquivos":
             pastas.append(arquivo.name)
     return {"arquivos": arquivos, "pastas": pastas}
 
@@ -24,5 +25,13 @@ def criar_pastas(arquivos_organizados: dict):
         except:
             print("pasta já existe")
 
+def mover_arquivos(caminho_base):
+    for i in arquivos_por_tipo["arquivos"]:
+        os.rename(caminho_base + i, caminho_base + "arquivos/" + i)
+
+    for i in arquivos_por_tipo["pastas"]:
+        os.rename(caminho_base + i, caminho_base + "pastas/" + i)
+
 arquivos_por_tipo = define_tipo_arquivo()
 criar_pastas(arquivos_por_tipo)
+mover_arquivos("/home/arthur/Downloads/")
