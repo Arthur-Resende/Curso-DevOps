@@ -25,44 +25,38 @@ file_types = {
     "Disk Image Files":['.BIN', '.DMG', '.IMG', '.ISO', '.MDF', '.ROM', '.VCD', '.VMDK'],
     "Developer Files":['.KT', '.LUA', '.M', '.MD', '.PL', '.PY', '.SB3', '.SLN', '.SWIFT', '.UNITY', '.VB', '.VCXPROJ', '.XCODEPROJ', '.YML'],
     "Backup Files":['.ABK', '.ARC', '.BAK', '.TMP'],
-    "Misc Files":['.CRDOWNLOAD', '.ICS', '.MSI', '.NOMEDIA', '.PART', '.PKPASS', '.TORRENT']
+    "Misc Files":['.CRDOWNLOAD', '.ICS', '.MSI', '.NOMEDIA', '.PART', '.PKPASS', '.TORRENT'],
+    "Folders": ""
 }
 
 def define_file_types():
     download_files = os.scandir("/home/arthur/Downloads")
-    file_by_type = []
+    file_by_type = {}
     for file in download_files:
         file_ext = file.name[file.name.find('.'):].upper()
         if file.is_dir() == False:
             for i in file_types.keys():
                 if file_ext in file_types[i]:
-                    file_by_type.append(i)
-        else:
-            file_by_type.append("Folders")
+                    file_by_type[file.name] = i
+
+        elif file.name not in file_types.keys():
+            file_by_type[file.name] = "Folders"
 
     return file_by_type
 
 def create_dirs(files_by_type: dict):
-    if files_by_type["dirs"] != []:
+    for file_type in files_by_type.items():
         try:
-            os.mkdir("/home/arthur/Downloads/pastas")
-        except:
-            pass
-
-    if files_by_type["files"] != []:
-        try:
-            os.mkdir("/home/arthur/Downloads/arquivos")
+            os.mkdir("/home/arthur/Downloads/%s" %file_type)
         except:
             pass
 
 def move_files(base_path, files_by_type: dict):
-    for i in files_by_type["files"]:
-        os.rename(base_path + i, base_path + "arquivos/" + i)
+    for file in files_by_type.keys():
+        src = "%s/%s" %(base_path, file)
+        dst = "%s/%s/%s" %(base_path, files_by_type[file], file)
+        os.rename(src, dst)
 
-    for i in files_by_type["dirs"]:
-        os.rename(base_path + i, base_path + "pastas/" + i)
-
-# arquivos_por_tipo = define_file_types()
-# create_dirs(arquivos_por_tipo)
-# move_files("/home/arthur/Downloads/", arquivos_por_tipo)
-define_file_types()
+arquivos_por_tipo = define_file_types()
+create_dirs(arquivos_por_tipo)
+move_files("/home/arthur/Downloads", arquivos_por_tipo)
