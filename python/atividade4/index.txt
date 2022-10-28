@@ -1,0 +1,681 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>Common File Extensions</title>
+<link rel="canonical" href="https://fileinfo.com/filetypes/common">
+<meta name="description" content="A list of common file extensions and file types that are good to know.">
+<meta name="keywords" content="common, popular, file, extensions, types, formats, helpful, list">
+<meta name="robots" content="max-image-preview:large">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<link rel="preconnect" href="https://www.google-analytics.com">
+<link rel="preconnect" href="https://www.googletagservices.com">
+<link rel="stylesheet" href="https://fileinfo.com/css/fi.css" media="screen, print">
+<link rel="icon" href="/svg/favicon.svg">
+<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+<script async src="https://c.amazon-adsystem.com/aax2/apstag.js"></script>
+<script>!function(e,t,a,n,o,s){window.innerWidth<=1e3&&(o=e.createElement(t),s=e.getElementsByTagName(t)[0],o.async=1,o.src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js",o.setAttribute("data-ad-client","ca-pub-0087137714961591"),s.parentNode.insertBefore(o,s))}(document,"script");</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-226516-9"></script>
+<script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag('config','UA-226516-9',{'custom_map':{'dimension1':'pixel_density'}});</script>
+<script>for(var ca=document.cookie.split("; "),i=0;i<ca.length;i++){var c=ca[i];if(-1!=c.indexOf("fi_theme=")){var theme=c.substring(9,c.length),html=document.getElementsByTagName("html")[0];html.classList.add("theme-"+theme),USERTHEME=theme;}else-1!=c.indexOf("fi_size=")&&(USERSIZE=c.substring(8,c.length))}var cvJS,ua=navigator.userAgent;(-1<ua.indexOf("MSIE")||-1<ua.indexOf("Trident"))&&((cvJS=document.createElement("script")).src="/js/css_vars.js",cvJS.setAttribute("onload","cssVars()"),document.head.appendChild(cvJS));</script>
+<script>!function(n,i,t,a,f,d,e){function o(t,a){i[n]._Q.push([t,a])}i[n]||(i[n]={init:function(){o("i",arguments)},fetchBids:function(){o("f",arguments)},setDisplayBids:function(){},targetingKeys:function(){return[]},_Q:[]})}("apstag",window),apstag.init({pubID:"1a8df5a0-42d8-4297-9e5a-335df591dd1b",adServer:"googletag",isSelfServePub:true});var sizes_tlb = [[970, 90], [728, 90], [468, 60], [320, 100]];var sizes_lb = [[728, 90], [468, 60], [320, 100]];var sizes_ss = [[300, 600], [160, 600], [728, 90], [468, 60], [320, 100]];window.googletag = window.googletag || {cmd: []};googletag.cmd.push(function(){function defineAdSlot(e,d,g,i){e="/1009901/"+e,g="div-gpt-ad-"+g+"-0",googletag.defineSlot(e,d,g).defineSizeMapping(i).addService(googletag.pubads())}var mapping_tlb = googletag.sizeMapping().addSize([1000, 0], [[970, 90], [728, 90], [468, 60], [320, 100]]).addSize([758, 0], [[728, 90], [468, 60], [320, 100]]).addSize([488, 0], [[468, 60], [320, 100]]).addSize([0, 0], [320, 100]).build();var mapping_lb = googletag.sizeMapping().addSize([1111, 0], [[728, 90], [468, 60], [320, 100]]).addSize([818, 0], [[728, 90], [468, 60], [320, 100]]).addSize([518, 0], [[468, 60], [320, 100]]).addSize([0, 0], [320, 100]).build();var mapping_ss = googletag.sizeMapping().addSize([1111, 0], [[300, 600], [160, 600]]).addSize([966, 0], [160, 600]).addSize([758, 0], [[728, 90], [468, 60], [320, 100]]).addSize([488, 0], [[468, 60], [320, 100]]).addSize([0, 0], [320, 100]).build();defineAdSlot('fi_tlb_2020', sizes_tlb, '1589910687980', mapping_tlb);defineAdSlot('fi_blb_2020', sizes_lb, '1589913000288', mapping_lb);defineAdSlot('fi_rss_2020', sizes_ss, '1589922228072', mapping_ss);});googletag.cmd.push(function(){googletag.pubads().disableInitialLoad(),window.innerWidth<=980?googletag.pubads().enableLazyLoad({fetchMarginPercent:200,renderMarginPercent:200}):googletag.pubads().enableSingleRequest(),googletag.pubads().setTargeting("page_url","/filetypes/common"),googletag.enableServices()});var amznSlots=[];function addAmznSlot(e,a,n){amznSlots.push({slotID:"div-gpt-ad-"+e+"-0",slotName:"/1009901/"+a,sizes:n})}addAmznSlot('1589910687980', 'fi_tlb_2020', sizes_tlb);addAmznSlot('1589913000288', 'fi_blb_2020', sizes_lb);addAmznSlot('1589922228072', 'fi_rss_2020', sizes_ss);apstag.fetchBids({slots:amznSlots,timeout:2e3},function(){apstag.setDisplayBids(),googletag.cmd.push(function(){googletag.pubads().refresh()})});googletag.cmd.push(function(){googletag.display("div-gpt-ad-1589910687980-0")});googletag.cmd.push(function(){googletag.display("div-gpt-ad-1589913000288-0")});googletag.cmd.push(function(){googletag.display("div-gpt-ad-1589922228072-0")});</script>
+</head>
+<body class="index browse">
+<div id="full">
+<header id="siteheader">
+<div class="content">
+<a href="#main" class="visuallyhidden">Skip to main content</a>
+<a href="/" class="logo">
+<span class="visuallyhidden">FileInfo</span>
+<svg height="34" viewBox="0 0 174 34" width="174" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd" transform="translate(0 .5)"><path d="m38.824 26v-6.578h5.876v-3.224h-5.876v-3.926h6.864v-3.224h-10.686v16.952zm11.388-14.794c.6586667 0 1.1916667-.1863333 1.599-.559s.611-.85366667.611-1.443-.2036667-1.066-.611-1.43-.9403333-.546-1.599-.546c-.6413333 0-1.17.182-1.586.546s-.624.84066667-.624 1.43.208 1.0703333.624 1.443.9446667.559 1.586.559zm1.924 14.794v-12.896h-3.822v12.896zm6.864.312c.4333333 0 .8103333-.0303333 1.131-.091s.585-.1343333.793-.221l-.468-2.834c-.104.0346667-.1863333.052-.247.052h-.221c-.156 0-.3076667-.078-.455-.234s-.221-.4333333-.221-.832v-14.378h-3.822v14.222c0 .6586667.0606667 1.2523333.182 1.781s.3163333.9793333.585 1.352.6283333.663 1.079.871 1.0053333.312 1.664.312zm9.698 0c.78 0 1.573-.13 2.379-.39s1.5383333-.6153333 2.197-1.066l-1.274-2.314c-.936.572-1.8633333.858-2.782.858-.8666667 0-1.599-.221-2.197-.663s-.9836667-1.131-1.157-2.067h7.722c.0346667-.156.0693333-.39.104-.702s.052-.6413333.052-.988c0-.884-.1126667-1.703-.338-2.457s-.5676667-1.4083333-1.027-1.963-1.0313333-.988-1.716-1.3-1.4863333-.468-2.405-.468c-.78 0-1.534.156-2.262.468s-1.3736667.7583333-1.937 1.339-1.0183333 1.2913333-1.365 2.132-.52 1.781-.52 2.821c0 1.0746667.1646667 2.028.494 2.86s.7886667 1.5383333 1.378 2.119 1.2826667 1.0226667 2.08 1.326 1.6553333.455 2.574.455zm1.794-8.164h-4.654c.1386667-.832.4376667-1.4473333.897-1.846s.9923333-.598 1.599-.598c.78 0 1.3346667.2253333 1.664.676s.494 1.04.494 1.768zm10.036 7.852v-16.952h-3.822v16.952zm7.514 0v-8.71c.416-.3986667.7973333-.7063333 1.144-.923s.7626667-.325 1.248-.325c.5546667 0 .9576667.1733333 1.209.52s.377.988.377 1.924v7.514h3.822v-8.008c0-1.6293333-.3163333-2.9033333-.949-3.822s-1.651-1.378-3.055-1.378c-.884 0-1.6553333.195-2.314.585s-1.2653333.845-1.82 1.365h-.104l-.26-1.638h-3.12v12.896zm15.522 0v-9.906h2.314v-2.99h-2.314v-.78c0-.6586667.13-1.131.39-1.417s.624-.429 1.092-.429c.398667 0 .840667.0866667 1.326.26l.702-2.808c-.294667-.104-.663-.208-1.105-.312s-.931667-.156-1.469-.156c-.866667 0-1.603333.13-2.21.39s-1.100667.61533333-1.482 1.066-.654333.97933333-.819 1.586c-.1646667.6066667-.247 1.248-.247 1.924v.702l-1.716.13v2.834h1.716v9.906zm9.672.312c.814667 0 1.599-.1516667 2.353-.455s1.421333-.741 2.002-1.313 1.044333-1.2783333 1.391-2.119.52-1.7983333.52-2.873-.173333-2.0323333-.52-2.873-.810333-1.547-1.391-2.119-1.248-1.0096667-2.002-1.313-1.538333-.455-2.353-.455-1.603333.1516667-2.366.455-1.434333.741-2.015 1.313-1.044333 1.2783333-1.391 2.119-.52 1.7983333-.52 2.873.173333 2.0323333.52 2.873.810333 1.547 1.391 2.119 1.252333 1.0096667 2.015 1.313 1.551333.455 2.366.455zm0-3.094c-.797333 0-1.391-.3293333-1.781-.988s-.585-1.5513333-.585-2.678.195-2.0193333.585-2.678.983667-.988 1.781-.988c.78 0 1.369333.3293333 1.768.988s.598 1.5513333.598 2.678-.199333 2.0193333-.598 2.678-.988.988-1.768.988zm10.452 3.094c.416 0 .775667-.1516667 1.079-.455s.455-.689.455-1.157c0-.5026667-.151667-.9056667-.455-1.209s-.663-.455-1.079-.455c-.433333 0-.801667.1516667-1.105.455s-.455.7063333-.455 1.209c0 .468.151667.8536667.455 1.157s.671667.455 1.105.455zm10.062 0c.762667 0 1.490667-.143 2.184-.429s1.326-.6803333 1.898-1.183l-.936-1.43c-.398667.3466667-.845.6456667-1.339.897s-1.035667.377-1.625.377c-.572 0-1.100667-.117-1.586-.351s-.897-.5633333-1.235-.988-.602333-.9316667-.793-1.521-.286-1.248-.286-1.976.099667-1.391.299-1.989.472333-1.1136667.819-1.547.762667-.767 1.248-1.001 1.014-.351 1.586-.351c.502667 0 .957667.104 1.365.312s.793.4766667 1.157.806l1.092-1.404c-.450667-.3986667-.970667-.7453333-1.56-1.04s-1.3-.442-2.132-.442c-.814667 0-1.590333.1473333-2.327.442s-1.382333.728-1.937 1.3-.996667 1.2696667-1.326 2.093-.494 1.7636667-.494 2.821c0 1.04.151667 1.9716667.455 2.795s.719333 1.5166667 1.248 2.08 1.157.9923333 1.885 1.287 1.508.442 2.34.442zm11.232 0c.78 0 1.521-.1473333 2.223-.442s1.321667-.7236667 1.859-1.287.966333-1.2566667 1.287-2.08.481-1.755.481-2.795c0-1.0573333-.160333-1.9976667-.481-2.821s-.749667-1.521-1.287-2.093-1.157-1.0053333-1.859-1.3-1.443-.442-2.223-.442-1.521.1473333-2.223.442-1.321667.728-1.859 1.3-.966333 1.2696667-1.287 2.093-.481 1.7636667-.481 2.821c0 1.04.160333 1.9716667.481 2.795s.749667 1.5166667 1.287 2.08 1.157.9923333 1.859 1.287 1.443.442 2.223.442zm0-1.768c-.537333 0-1.031333-.117-1.482-.351s-.836333-.5633333-1.157-.988-.567667-.9316667-.741-1.521-.26-1.248-.26-1.976.086667-1.391.26-1.989.420333-1.1136667.741-1.547.706333-.767 1.157-1.001.944667-.351 1.482-.351 1.031333.117 1.482.351.836333.5676667 1.157 1.001.567667.949.741 1.547.26 1.261.26 1.989-.086667 1.3866667-.26 1.976-.420333 1.0963333-.741 1.521-.706333.754-1.157.988-.944667.351-1.482.351zm11.31 1.456v-9.152c1.161333-1.3 2.218667-1.95 3.172-1.95.814667 0 1.412667.2643333 1.794.793s.572 1.391.572 2.587v7.722h2.132v-9.152c1.161333-1.3 2.218667-1.95 3.172-1.95.797333 0 1.386667.2643333 1.768.793s.572 1.391.572 2.587v7.722h2.132v-8.008c0-1.6293333-.316333-2.86-.949-3.692s-1.599-1.248-2.899-1.248c-.78 0-1.503667.221-2.171.663s-1.330333 1.027-1.989 1.755c-.26-.7626667-.663-1.3563333-1.209-1.781s-1.304333-.637-2.275-.637c-.762667 0-1.469.2036667-2.119.611s-1.252333.9143333-1.807 1.521h-.078l-.182-1.82h-1.768v12.636z" fill="#fff" fill-rule="nonzero" /><g transform="translate(0 2.5)"><path d="m1 0h12l8 8v19c0 .5522847-.4477153 1-1 1h-19c-.55228475 0-1-.4477153-1-1v-26c0-.55228475.44771525-1 1-1z" fill="#fff" /><path d="m13 0 8 8h-7c-.5522847 0-1-.44771525-1-1z" fill="#89c0ff" /></g></g></svg></a>
+<div class="siteheader-middle">
+<div class="searchwrapper collapsed">
+<form id="search" class="search" action="/search" method="post">
+<div class='autocomplete' role='combobox' aria-expanded='false' aria-owns='autocomplete-results'>
+<input type="text" id="term" name="term" placeholder="Search (e.g. jpg, gif, png, tif)" aria-label="Search (e.g. psd, docx, exe, jpg, zip)" autocomplete="off" class='autocomplete-input term' aria-autocomplete='both' aria-controls='autocomplete-results'>
+<button id="searchsubmit" class="searchsubmit"><span class="visuallyhidden">Search</span><svg height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"><path d="m312.876253 27.4467104 3.827679 3.8276786c.394757.3947574.394757 1.0347856 0 1.429543-.394757.3947573-1.034786.3947573-1.429543 0l-3.827679-3.8276786c-1.086605.7951927-2.426604 1.2646606-3.876253 1.2646606-3.628763 0-6.570457-2.9416938-6.570457-6.570457s2.941694-6.570457 6.570457-6.570457 6.570457 2.9416938 6.570457 6.570457c0 1.4496489-.469468 2.7896478-1.264661 3.8762534zm-5.305796.6725245c2.512221 0 4.548778-2.0365572 4.548778-4.5487779s-2.036557-4.5487779-4.548778-4.5487779-4.548778 2.0365572-4.548778 4.5487779 2.036557 4.5487779 4.548778 4.5487779z" fill="#fff" fill-rule="evenodd" transform="translate(-301 -17)" /></svg></button>
+</div>
+<ul id='autocomplete-results' class='autocomplete-results hidden' aria-label='Search'>
+</ul>
+</form>
+</div>
+<a href="/search" class="headerbutton advsearch" id="advsearch">Advanced&nbsp;Search</a>
+<a href="/random" class="headerbutton random" id="random"><span class="visuallyhidden">Random</span>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g><g><path d="M506.24,371.7l-96-80c-4.768-4-11.424-4.8-17.024-2.208c-5.632,2.656-9.216,8.288-9.216,14.496v48h-26.784 c-22.208,0-42.496-11.264-54.272-30.08l-103.616-165.76c-23.52-37.664-64.096-60.16-108.544-60.16H0v64h90.784 c22.208,0,42.496,11.264,54.272,30.08l103.616,165.76c23.552,37.664,64.128,60.16,108.544,60.16H384v48 c0,6.208,3.584,11.84,9.216,14.496c2.144,0.992,4.48,1.504,6.784,1.504c3.68,0,7.328-1.248,10.24-3.712l96-80 c3.68-3.04,5.76-7.552,5.76-12.288C512,379.252,509.92,374.74,506.24,371.7z" /></g></g><g><g><path d="M506.24,115.7l-96-80c-4.768-3.968-11.424-4.8-17.024-2.176C387.584,36.116,384,41.78,384,47.988v48h-26.784 c-44.448,0-85.024,22.496-108.544,60.16l-5.792,9.28l37.728,60.384l22.336-35.744c11.776-18.816,32.064-30.08,54.272-30.08H384v48 c0,6.208,3.584,11.872,9.216,14.496c2.144,0.992,4.48,1.504,6.784,1.504c3.68,0,7.328-1.28,10.24-3.712l96-80 c3.68-3.04,5.76-7.552,5.76-12.288C512,123.252,509.92,118.74,506.24,115.7z" /></g></g><g><g><path d="M167.392,286.164l-22.304,35.744c-11.776,18.816-32.096,30.08-54.304,30.08H0v64h90.784 c44.416,0,84.992-22.496,108.544-60.16l5.792-9.28L167.392,286.164z" /></g></g></svg></a>
+<button id="searchtoggle"><span class="visuallyhidden">Open Search Box</span><svg height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"><path d="m312.876253 27.4467104 3.827679 3.8276786c.394757.3947574.394757 1.0347856 0 1.429543-.394757.3947573-1.034786.3947573-1.429543 0l-3.827679-3.8276786c-1.086605.7951927-2.426604 1.2646606-3.876253 1.2646606-3.628763 0-6.570457-2.9416938-6.570457-6.570457s2.941694-6.570457 6.570457-6.570457 6.570457 2.9416938 6.570457 6.570457c0 1.4496489-.469468 2.7896478-1.264661 3.8762534zm-5.305796.6725245c2.512221 0 4.548778-2.0365572 4.548778-4.5487779s-2.036557-4.5487779-4.548778-4.5487779-4.548778 2.0365572-4.548778 4.5487779 2.036557 4.5487779 4.548778 4.5487779z" fill="#fff" fill-rule="evenodd" transform="translate(-301 -17)" /></svg></button>
+</div>
+<div class="siteheader-right">
+<button id="menuopen"><span class="visuallyhidden">Open Menu</span><svg height="14" viewBox="0 0 18 14" width="18" xmlns="http://www.w3.org/2000/svg"><path d="m354 30c.552285 0 1 .4477153 1 1s-.447715 1-1 1h-16c-.552285 0-1-.4477153-1-1s.447715-1 1-1zm0-6c.552285 0 1 .4477153 1 1s-.447715 1-1 1h-16c-.552285 0-1-.4477153-1-1s.447715-1 1-1zm0-6c.552285 0 1 .4477153 1 1s-.447715 1-1 1h-16c-.552285 0-1-.4477153-1-1s.447715-1 1-1z" fill="#fff" fill-rule="evenodd" transform="translate(-337 -18)" /></svg></button>
+<nav id="sitemenu" class="collapsed">
+<button id="menuclose"><span class="visuallyhidden">Close Menu</span><svg height="14" viewBox="0 0 14 14" width="14" xmlns="http://www.w3.org/2000/svg"><path d="m343.292893 18.2928932c.360484-.3604839.927715-.3882135 1.320006-.0831886l.094208.0831886 5.292893 5.2921068 5.292893-5.2921068c.390525-.3905243 1.023689-.3905243 1.414214 0 .360484.360484.388213.927715.083188 1.3200062l-.083188.0942074-5.292107 5.2928932 5.292107 5.2928932.083188.0942074c.305025.3922912.277296.9595222-.083188 1.3200062-.360484.3604839-.927715.3882135-1.320006.0831886l-.094208-.0831886-5.292893-5.2921068-5.292893 5.2921068c-.390525.3905243-1.023689.3905243-1.414214 0-.360484-.360484-.388213-.927715-.083188-1.3200062l.083188-.0942074 5.292107-5.2928932-5.292107-5.2928932-.083188-.0942074c-.305025-.3922912-.277296-.9595222.083188-1.3200062z" fill="#fff" transform="translate(-343 -18)" /></svg></button>
+<ul>
+<li><a href="/filetypes/">File Types</a></li>
+<li><a href="/apps/">Software</a></li>
+<li><a href="/help/">Help Center</a></li>
+<li class="mobile"><a href="/search">Advanced Search</a></li>
+<li class="mobile"><a href="/random">Random Extension</a></li>
+<li class="settings"><button id="settings">
+<span class="visuallyhidden">Settings</span>
+<svg height="32" viewBox="0 0 24 24" width="32" xmlns="http://www.w3.org/2000/svg"><path d="m1383 17c6.62742 0 12 5.372583 12 12s-5.37258 12-12 12-12-5.372583-12-12 5.37258-12 12-12zm1.97036 4c-.36627.8715444-1.02306 1.3073166-1.97036 1.3073166s-1.60409-.4357722-1.97036-1.3073166c-.81934.2011163-1.59052.52482-2.29297.9505564.35693.8749944.20056 1.6473283-.46911 2.3170018-.66968.6696735-1.44201.8260449-2.317.4691141-.42574.7024507-.74944 1.4736248-.95056 2.2929676.87154.3662719 1.30732 1.0230586 1.30732 1.9703601s-.43578 1.6040882-1.30732 1.9703601c.20112.8193428.52482 1.5905169.95056 2.2929676.87499-.3569308 1.64732-.2005594 2.317.4691141.66967.6696735.82604 1.4420074.46911 2.3170018.70245.4257364 1.47363.7494401 2.29297.9505564.36627-.8715444 1.02306-1.3073166 1.97036-1.3073166s1.60409.4357722 1.97036 1.3073166c.81934-.2011163 1.59052-.52482 2.29297-.9505564-.35693-.8749944-.20056-1.6473283.46911-2.3170018.66968-.6696735 1.44201-.8260449 2.317-.4691141.42574-.7024507.74944-1.4736248.95056-2.2929676-.87154-.3662719-1.30732-1.0230586-1.30732-1.9703601s.43578-1.6040882 1.30732-1.9703601c-.20112-.8193428-.52482-1.5905169-.95056-2.2929676-.87499.3569308-1.64732.2005594-2.317-.4691141-.66967-.6696735-.82604-1.4420074-.46911-2.3170018-.70245-.4257364-1.47363-.7494401-2.29297-.9505564zm-1.97036 4.9110692c1.70597 0 3.08893 1.3829614 3.08893 3.0889308s-1.38296 3.0889308-3.08893 3.0889308-3.08893-1.3829614-3.08893-3.0889308 1.38296-3.0889308 3.08893-3.0889308z" fill-rule="evenodd" transform="translate(-1371 -17)" /></svg></button>
+<div class="settingsmenu">
+<fieldset>
+<legend>Theme</legend>
+<input id="theme-default" value="default" type="radio" name="theme" checked>
+<label for="theme-default">Light</label>
+<input id="theme-dark" value="dark" type="radio" name="theme">
+<label for="theme-dark">Dark</label>
+<input id="theme-hc" value="hc" type="radio" name="theme">
+<label for="theme-hc">High Contrast</label>
+</fieldset>
+<div class="fontsizewrapper"><label for="fontsize">Font Size<input type="range" id="fontsize" name="fontsize" min="12" max="24" step="2" value="18"></label><span class="currentsize">18</span></div>
+<button id="resetsettings">Reset</button>
+</div>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</header>
+<main>
+<div class="adTopLB">
+<div id="div-gpt-ad-1589910687980-0">
+</div>
+</div>
+<div id="main">
+<div id="left">
+<article>
+
+<div class="floatheading"><h1 class="pageheading">Common File Types</h1></div>
+<p>Common file extensions that are good to know, organized by file format.</p>
+<h2 class="heading">Text Files</h2>
+<div class="tablewrap">
+<table class="list sortable filetypes">
+<thead>
+<tr>
+<th class="extcol" data-order="asc">Extension</th>
+<th class="stretchcol">File Type</th>
+</tr>
+</thead>
+<tbody>
+<tr><td class="extcol"><a href="/extension/doc">.DOC</a></td><td class="stretchcol">Microsoft Word Document (Legacy)</td></tr>
+<tr><td class="extcol"><a href="/extension/docx">.DOCX</a></td><td class="stretchcol">Microsoft Word Document</td></tr>
+<tr><td class="extcol"><a href="/extension/eml">.EML</a></td><td class="stretchcol">E-Mail Message</td></tr>
+<tr><td class="extcol"><a href="/extension/log">.LOG</a></td><td class="stretchcol">Log File</td></tr>
+<tr><td class="extcol"><a href="/extension/msg">.MSG</a></td><td class="stretchcol">Outlook Message Item File</td></tr>
+<tr><td class="extcol"><a href="/extension/odt">.ODT</a></td><td class="stretchcol">OpenDocument Text Document</td></tr>
+<tr><td class="extcol"><a href="/extension/pages">.PAGES</a></td><td class="stretchcol">Apple Pages Document</td></tr>
+<tr><td class="extcol"><a href="/extension/rtf">.RTF</a></td><td class="stretchcol">Rich Text Format File</td></tr>
+<tr><td class="extcol"><a href="/extension/tex">.TEX</a></td><td class="stretchcol">LaTeX Source Document</td></tr>
+<tr><td class="extcol"><a href="/extension/txt">.TXT</a></td><td class="stretchcol">Plain Text File</td></tr>
+<tr><td class="extcol"><a href="/extension/wpd">.WPD</a></td><td class="stretchcol">WordPerfect Document</td></tr>
+</tbody>
+</table>
+</div>
+<a href="/filetypes/text">See all text file types</a>
+<h2 class="heading">Data Files</h2>
+<div class="tablewrap">
+<table class="list sortable filetypes">
+<thead>
+<tr>
+<th class="extcol" data-order="asc">Extension</th>
+<th class="stretchcol">File Type</th>
+</tr>
+</thead>
+<tbody>
+<tr><td class="extcol"><a href="/extension/aae">.AAE</a></td><td class="stretchcol">Sidecar Image Edit File</td></tr>
+<tr><td class="extcol"><a href="/extension/bin">.BIN</a></td><td class="stretchcol">Generic Binary File</td></tr>
+<tr><td class="extcol"><a href="/extension/csv">.CSV</a></td><td class="stretchcol">Comma-Separated Values File</td></tr>
+<tr><td class="extcol"><a href="/extension/dat">.DAT</a></td><td class="stretchcol">Data File</td></tr>
+<tr><td class="extcol"><a href="/extension/key">.KEY</a></td><td class="stretchcol">Apple Keynote Presentation</td></tr>
+<tr><td class="extcol"><a href="/extension/mpp">.MPP</a></td><td class="stretchcol">Microsoft Project File</td></tr>
+<tr><td class="extcol"><a href="/extension/obb">.OBB</a></td><td class="stretchcol">Android Opaque Binary Blob File</td></tr>
+<tr><td class="extcol"><a href="/extension/ppt">.PPT</a></td><td class="stretchcol">Microsoft PowerPoint Presentation (Legacy)</td></tr>
+<tr><td class="extcol"><a href="/extension/pptx">.PPTX</a></td><td class="stretchcol">Microsoft PowerPoint Presentation</td></tr>
+<tr><td class="extcol"><a href="/extension/rpt">.RPT</a></td><td class="stretchcol">Crystal Reports File</td></tr>
+<tr><td class="extcol"><a href="/extension/sdf">.SDF</a></td><td class="stretchcol">Standard Data File</td></tr>
+<tr><td class="extcol"><a href="/extension/tar">.TAR</a></td><td class="stretchcol">Consolidated Unix File Archive</td></tr>
+<tr><td class="extcol"><a href="/extension/vcf">.VCF</a></td><td class="stretchcol">vCard File</td></tr>
+<tr><td class="extcol"><a href="/extension/xml">.XML</a></td><td class="stretchcol">XML File</td></tr>
+</tbody>
+</table>
+</div>
+<a href="/filetypes/data">See all data file types</a>
+<h2 class="heading">Audio Files</h2>
+<div class="tablewrap">
+<table class="list sortable filetypes">
+<thead>
+<tr>
+<th class="extcol" data-order="asc">Extension</th>
+<th class="stretchcol">File Type</th>
+</tr>
+</thead>
+<tbody>
+<tr><td class="extcol"><a href="/extension/aif">.AIF</a></td><td class="stretchcol">Audio Interchange File Format</td></tr>
+<tr><td class="extcol"><a href="/extension/flac">.FLAC</a></td><td class="stretchcol">Free Lossless Audio Codec File</td></tr>
+<tr><td class="extcol"><a href="/extension/m3u">.M3U</a></td><td class="stretchcol">M3U Media Playlist</td></tr>
+<tr><td class="extcol"><a href="/extension/m4a">.M4A</a></td><td class="stretchcol">MPEG-4 Audio File</td></tr>
+<tr><td class="extcol"><a href="/extension/mid">.MID</a></td><td class="stretchcol">MIDI File</td></tr>
+<tr><td class="extcol"><a href="/extension/mp3">.MP3</a></td><td class="stretchcol">MP3 Audio File</td></tr>
+<tr><td class="extcol"><a href="/extension/ogg">.OGG</a></td><td class="stretchcol">Ogg Vorbis Audio File</td></tr>
+<tr><td class="extcol"><a href="/extension/wav">.WAV</a></td><td class="stretchcol">WAVE Audio File</td></tr>
+<tr><td class="extcol"><a href="/extension/wma">.WMA</a></td><td class="stretchcol">Windows Media Audio File</td></tr>
+</tbody>
+</table>
+</div>
+<a href="/filetypes/audio">See all audio file types</a>
+<h2 class="heading">Video Files</h2>
+<div class="tablewrap">
+<table class="list sortable filetypes">
+<thead>
+<tr>
+<th class="extcol" data-order="asc">Extension</th>
+<th class="stretchcol">File Type</th>
+</tr>
+</thead>
+<tbody>
+<tr><td class="extcol"><a href="/extension/3gp">.3GP</a></td><td class="stretchcol">3GPP Multimedia File</td></tr>
+<tr><td class="extcol"><a href="/extension/asf">.ASF</a></td><td class="stretchcol">Advanced Systems Format File</td></tr>
+<tr><td class="extcol"><a href="/extension/avi">.AVI</a></td><td class="stretchcol">Audio Video Interleave File</td></tr>
+<tr><td class="extcol"><a href="/extension/flv">.FLV</a></td><td class="stretchcol">Flash Video File</td></tr>
+<tr><td class="extcol"><a href="/extension/m4v">.M4V</a></td><td class="stretchcol">iTunes Video File</td></tr>
+<tr><td class="extcol"><a href="/extension/mov">.MOV</a></td><td class="stretchcol">Apple QuickTime Movie</td></tr>
+<tr><td class="extcol"><a href="/extension/mp4">.MP4</a></td><td class="stretchcol">MPEG-4 Video</td></tr>
+<tr><td class="extcol"><a href="/extension/mpg">.MPG</a></td><td class="stretchcol">MPEG Video</td></tr>
+<tr><td class="extcol"><a href="/extension/srt">.SRT</a></td><td class="stretchcol">SubRip Subtitle File</td></tr>
+<tr><td class="extcol"><a href="/extension/swf">.SWF</a></td><td class="stretchcol">Shockwave Flash Movie</td></tr>
+<tr><td class="extcol"><a href="/extension/ts">.TS</a></td><td class="stretchcol">Video Transport Stream File</td></tr>
+<tr><td class="extcol"><a href="/extension/vob">.VOB</a></td><td class="stretchcol">DVD Video Object File</td></tr>
+<tr><td class="extcol"><a href="/extension/wmv">.WMV</a></td><td class="stretchcol">Windows Media Video</td></tr>
+</tbody>
+</table>
+</div>
+<a href="/filetypes/video">See all video file types</a>
+<h2 class="heading">3D Image Files</h2>
+<div class="tablewrap">
+<table class="list sortable filetypes">
+<thead>
+<tr>
+<th class="extcol" data-order="asc">Extension</th>
+<th class="stretchcol">File Type</th>
+</tr>
+</thead>
+<tbody>
+<tr><td class="extcol"><a href="/extension/3dm">.3DM</a></td><td class="stretchcol">Rhino 3D Model</td></tr>
+<tr><td class="extcol"><a href="/extension/3ds">.3DS</a></td><td class="stretchcol">3D Studio Scene</td></tr>
+<tr><td class="extcol"><a href="/extension/blend">.BLEND</a></td><td class="stretchcol">Blender 3D Data File</td></tr>
+<tr><td class="extcol"><a href="/extension/dae">.DAE</a></td><td class="stretchcol">Digital Asset Exchange File</td></tr>
+<tr><td class="extcol"><a href="/extension/fbx">.FBX</a></td><td class="stretchcol">Autodesk FBX Interchange File</td></tr>
+<tr><td class="extcol"><a href="/extension/max">.MAX</a></td><td class="stretchcol">3ds Max Scene File</td></tr>
+<tr><td class="extcol"><a href="/extension/obj">.OBJ</a></td><td class="stretchcol">Wavefront 3D Object File</td></tr>
+</tbody>
+</table>
+</div>
+<a href="/filetypes/3d_image">See all 3d image file types</a>
+<h2 class="heading">Raster Image Files</h2>
+<div class="tablewrap">
+<table class="list sortable filetypes">
+<thead>
+<tr>
+<th class="extcol" data-order="asc">Extension</th>
+<th class="stretchcol">File Type</th>
+</tr>
+</thead>
+<tbody>
+<tr><td class="extcol"><a href="/extension/bmp">.BMP</a></td><td class="stretchcol">Bitmap Image</td></tr>
+<tr><td class="extcol"><a href="/extension/dcm">.DCM</a></td><td class="stretchcol">DICOM Image</td></tr>
+<tr><td class="extcol"><a href="/extension/dds">.DDS</a></td><td class="stretchcol">DirectDraw Surface Image</td></tr>
+<tr><td class="extcol"><a href="/extension/djvu">.DJVU</a></td><td class="stretchcol">DjVu Image</td></tr>
+<tr><td class="extcol"><a href="/extension/gif">.GIF</a></td><td class="stretchcol">Graphical Interchange Format File</td></tr>
+<tr><td class="extcol"><a href="/extension/heic">.HEIC</a></td><td class="stretchcol">High Efficiency Image Format</td></tr>
+<tr><td class="extcol"><a href="/extension/jpg">.JPG</a></td><td class="stretchcol">JPEG Image</td></tr>
+<tr><td class="extcol"><a href="/extension/png">.PNG</a></td><td class="stretchcol">Portable Network Graphic</td></tr>
+<tr><td class="extcol"><a href="/extension/psd">.PSD</a></td><td class="stretchcol">Adobe Photoshop Document</td></tr>
+<tr><td class="extcol"><a href="/extension/tga">.TGA</a></td><td class="stretchcol">Targa Graphic</td></tr>
+<tr><td class="extcol"><a href="/extension/tif">.TIF</a></td><td class="stretchcol">Tagged Image File</td></tr>
+</tbody>
+</table>
+</div>
+<a href="/filetypes/raster_image">See all raster image file types</a>
+<h2 class="heading">Vector Image Files</h2>
+<div class="tablewrap">
+<table class="list sortable filetypes">
+<thead>
+<tr>
+<th class="extcol" data-order="asc">Extension</th>
+<th class="stretchcol">File Type</th>
+</tr>
+</thead>
+<tbody>
+<tr><td class="extcol"><a href="/extension/ai">.AI</a></td><td class="stretchcol">Adobe Illustrator Artwork</td></tr>
+<tr><td class="extcol"><a href="/extension/cdr">.CDR</a></td><td class="stretchcol">CorelDRAW Image File</td></tr>
+<tr><td class="extcol"><a href="/extension/emf">.EMF</a></td><td class="stretchcol">Enhanced Windows Metafile</td></tr>
+<tr><td class="extcol"><a href="/extension/eps">.EPS</a></td><td class="stretchcol">Encapsulated PostScript File</td></tr>
+<tr><td class="extcol"><a href="/extension/ps">.PS</a></td><td class="stretchcol">PostScript File</td></tr>
+<tr><td class="extcol"><a href="/extension/sketch">.SKETCH</a></td><td class="stretchcol">Sketch Drawing</td></tr>
+<tr><td class="extcol"><a href="/extension/svg">.SVG</a></td><td class="stretchcol">Scalable Vector Graphics File</td></tr>
+<tr><td class="extcol"><a href="/extension/vsdx">.VSDX</a></td><td class="stretchcol">Microsoft Visio Drawing</td></tr>
+</tbody>
+</table>
+</div>
+<a href="/filetypes/vector_image">See all vector image file types</a>
+<h2 class="heading">Page Layout Files</h2>
+<div class="tablewrap">
+<table class="list sortable filetypes">
+<thead>
+<tr>
+<th class="extcol" data-order="asc">Extension</th>
+<th class="stretchcol">File Type</th>
+</tr>
+</thead>
+<tbody>
+<tr><td class="extcol"><a href="/extension/afpub">.AFPUB</a></td><td class="stretchcol">Affinity Publisher Document</td></tr>
+<tr><td class="extcol"><a href="/extension/indd">.INDD</a></td><td class="stretchcol">Adobe InDesign Document</td></tr>
+<tr><td class="extcol"><a href="/extension/oxps">.OXPS</a></td><td class="stretchcol">OpenXPS File</td></tr>
+<tr><td class="extcol"><a href="/extension/pdf">.PDF</a></td><td class="stretchcol">Portable Document Format File</td></tr>
+<tr><td class="extcol"><a href="/extension/pmd">.PMD</a></td><td class="stretchcol">PageMaker Document</td></tr>
+<tr><td class="extcol"><a href="/extension/pub">.PUB</a></td><td class="stretchcol">Publisher Document</td></tr>
+<tr><td class="extcol"><a href="/extension/qxp">.QXP</a></td><td class="stretchcol">QuarkXPress Project File</td></tr>
+<tr><td class="extcol"><a href="/extension/xps">.XPS</a></td><td class="stretchcol">XML Paper Specification File</td></tr>
+</tbody>
+</table>
+</div>
+<a href="/filetypes/page_layout">See all page layout file types</a>
+<h2 class="heading">Spreadsheet Files</h2>
+<div class="tablewrap">
+<table class="list sortable filetypes">
+<thead>
+<tr>
+<th class="extcol" data-order="asc">Extension</th>
+<th class="stretchcol">File Type</th>
+</tr>
+</thead>
+<tbody>
+<tr><td class="extcol"><a href="/extension/numbers">.NUMBERS</a></td><td class="stretchcol">Apple Numbers Spreadsheet</td></tr>
+<tr><td class="extcol"><a href="/extension/ods">.ODS</a></td><td class="stretchcol">OpenDocument Spreadsheet</td></tr>
+<tr><td class="extcol"><a href="/extension/xlr">.XLR</a></td><td class="stretchcol">Works Spreadsheet</td></tr>
+<tr><td class="extcol"><a href="/extension/xls">.XLS</a></td><td class="stretchcol">Microsoft Excel Spreadsheet (Legacy)</td></tr>
+<tr><td class="extcol"><a href="/extension/xlsx">.XLSX</a></td><td class="stretchcol">Microsoft Excel Spreadsheet</td></tr>
+</tbody>
+</table>
+</div>
+<a href="/filetypes/spreadsheet">See all spreadsheet file types</a>
+<h2 class="heading">Database Files</h2>
+<div class="tablewrap">
+<table class="list sortable filetypes">
+<thead>
+<tr>
+<th class="extcol" data-order="asc">Extension</th>
+<th class="stretchcol">File Type</th>
+</tr>
+</thead>
+<tbody>
+<tr><td class="extcol"><a href="/extension/accdb">.ACCDB</a></td><td class="stretchcol">Access 2007 Database</td></tr>
+<tr><td class="extcol"><a href="/extension/crypt14">.CRYPT14</a></td><td class="stretchcol">WhatsApp Encrypted Database File</td></tr>
+<tr><td class="extcol"><a href="/extension/db">.DB</a></td><td class="stretchcol">Database File</td></tr>
+<tr><td class="extcol"><a href="/extension/mdb">.MDB</a></td><td class="stretchcol">Microsoft Access Database</td></tr>
+<tr><td class="extcol"><a href="/extension/odb">.ODB</a></td><td class="stretchcol">OpenDocument Database</td></tr>
+<tr><td class="extcol"><a href="/extension/pdb">.PDB</a></td><td class="stretchcol">Program Database</td></tr>
+<tr><td class="extcol"><a href="/extension/sql">.SQL</a></td><td class="stretchcol">Structured Query Language Data File</td></tr>
+<tr><td class="extcol"><a href="/extension/sqlite">.SQLITE</a></td><td class="stretchcol">SQLite Database</td></tr>
+</tbody>
+</table>
+</div>
+<a href="/filetypes/database">See all database file types</a>
+<h2 class="heading">Executable Files</h2>
+<div class="tablewrap">
+<table class="list sortable filetypes">
+<thead>
+<tr>
+<th class="extcol" data-order="asc">Extension</th>
+<th class="stretchcol">File Type</th>
+</tr>
+</thead>
+<tbody>
+<tr><td class="extcol"><a href="/extension/apk">.APK</a></td><td class="stretchcol">Android Package File</td></tr>
+<tr><td class="extcol"><a href="/extension/app">.APP</a></td><td class="stretchcol">macOS Application Bundle</td></tr>
+<tr><td class="extcol"><a href="/extension/bat">.BAT</a></td><td class="stretchcol">DOS Batch File</td></tr>
+<tr><td class="extcol"><a href="/extension/bin">.BIN</a></td><td class="stretchcol">Unix Executable File</td></tr>
+<tr><td class="extcol"><a href="/extension/cmd">.CMD</a></td><td class="stretchcol">Windows Command File</td></tr>
+<tr><td class="extcol"><a href="/extension/com">.COM</a></td><td class="stretchcol">DOS Command File</td></tr>
+<tr><td class="extcol"><a href="/extension/exe">.EXE</a></td><td class="stretchcol">Windows Executable File</td></tr>
+<tr><td class="extcol"><a href="/extension/ipa">.IPA</a></td><td class="stretchcol">iOS Application</td></tr>
+<tr><td class="extcol"><a href="/extension/jar">.JAR</a></td><td class="stretchcol">Java Archive</td></tr>
+<tr><td class="extcol"><a href="/extension/run">.RUN</a></td><td class="stretchcol">Linux Executable File</td></tr>
+<tr><td class="extcol"><a href="/extension/sh">.SH</a></td><td class="stretchcol">Bash Shell Script</td></tr>
+</tbody>
+</table>
+</div>
+<a href="/filetypes/executable">See all executable file types</a>
+<h2 class="heading">Game Files</h2>
+<div class="tablewrap">
+<table class="list sortable filetypes">
+<thead>
+<tr>
+<th class="extcol" data-order="asc">Extension</th>
+<th class="stretchcol">File Type</th>
+</tr>
+</thead>
+<tbody>
+<tr><td class="extcol"><a href="/extension/bin">.BIN</a></td><td class="stretchcol">Sega Genesis Game ROM</td></tr>
+<tr><td class="extcol"><a href="/extension/dem">.DEM</a></td><td class="stretchcol">Video Game Demo File</td></tr>
+<tr><td class="extcol"><a href="/extension/gam">.GAM</a></td><td class="stretchcol">Saved Game File</td></tr>
+<tr><td class="extcol"><a href="/extension/gba">.GBA</a></td><td class="stretchcol">Game Boy Advance ROM</td></tr>
+<tr><td class="extcol"><a href="/extension/nes">.NES</a></td><td class="stretchcol">Nintendo (NES) ROM File</td></tr>
+<tr><td class="extcol"><a href="/extension/pak">.PAK</a></td><td class="stretchcol">Video Game Package</td></tr>
+<tr><td class="extcol"><a href="/extension/pkg">.PKG</a></td><td class="stretchcol">PlayStation Store Downloaded Package</td></tr>
+<tr><td class="extcol"><a href="/extension/rom">.ROM</a></td><td class="stretchcol">N64 Game ROM File</td></tr>
+<tr><td class="extcol"><a href="/extension/sav">.SAV</a></td><td class="stretchcol">Saved Game</td></tr>
+<tr><td class="extcol"><a href="/extension/sav">.SAV</a></td><td class="stretchcol">Nintendo DS Save File</td></tr>
+</tbody>
+</table>
+</div>
+<a href="/filetypes/game">See all game file types</a>
+<h2 class="heading">CAD Files</h2>
+<div class="tablewrap">
+<table class="list sortable filetypes">
+<thead>
+<tr>
+<th class="extcol" data-order="asc">Extension</th>
+<th class="stretchcol">File Type</th>
+</tr>
+</thead>
+<tbody>
+<tr><td class="extcol"><a href="/extension/dgn">.DGN</a></td><td class="stretchcol">MicroStation Design File</td></tr>
+<tr><td class="extcol"><a href="/extension/dwg">.DWG</a></td><td class="stretchcol">AutoCAD Drawing</td></tr>
+<tr><td class="extcol"><a href="/extension/dxf">.DXF</a></td><td class="stretchcol">Drawing Exchange Format File</td></tr>
+<tr><td class="extcol"><a href="/extension/step">.STEP</a></td><td class="stretchcol">STEP 3D Model</td></tr>
+<tr><td class="extcol"><a href="/extension/stl">.STL</a></td><td class="stretchcol">Stereolithography File</td></tr>
+<tr><td class="extcol"><a href="/extension/stp">.STP</a></td><td class="stretchcol">STEP 3D CAD File</td></tr>
+</tbody>
+</table>
+</div>
+<a href="/filetypes/cad">See all cad file types</a>
+<h2 class="heading">GIS Files</h2>
+<div class="tablewrap">
+<table class="list sortable filetypes">
+<thead>
+<tr>
+<th class="extcol" data-order="asc">Extension</th>
+<th class="stretchcol">File Type</th>
+</tr>
+</thead>
+<tbody>
+<tr><td class="extcol"><a href="/extension/gpx">.GPX</a></td><td class="stretchcol">GPS Exchange File</td></tr>
+<tr><td class="extcol"><a href="/extension/kml">.KML</a></td><td class="stretchcol">Keyhole Markup Language File</td></tr>
+<tr><td class="extcol"><a href="/extension/kmz">.KMZ</a></td><td class="stretchcol">Google Earth Placemark File</td></tr>
+<tr><td class="extcol"><a href="/extension/osm">.OSM</a></td><td class="stretchcol">OpenStreetMap Map</td></tr>
+</tbody>
+</table>
+</div>
+<a href="/filetypes/gis">See all gis file types</a>
+<h2 class="heading">Web Files</h2>
+<div class="tablewrap">
+<table class="list sortable filetypes">
+<thead>
+<tr>
+<th class="extcol" data-order="asc">Extension</th>
+<th class="stretchcol">File Type</th>
+</tr>
+</thead>
+<tbody>
+<tr><td class="extcol"><a href="/extension/asp">.ASP</a></td><td class="stretchcol">Active Server Page</td></tr>
+<tr><td class="extcol"><a href="/extension/aspx">.ASPX</a></td><td class="stretchcol">Active Server Page Extended File</td></tr>
+<tr><td class="extcol"><a href="/extension/cer">.CER</a></td><td class="stretchcol">Internet Security Certificate</td></tr>
+<tr><td class="extcol"><a href="/extension/cfm">.CFM</a></td><td class="stretchcol">ColdFusion Markup File</td></tr>
+<tr><td class="extcol"><a href="/extension/csr">.CSR</a></td><td class="stretchcol">Certificate Signing Request File</td></tr>
+<tr><td class="extcol"><a href="/extension/css">.CSS</a></td><td class="stretchcol">Cascading Style Sheet</td></tr>
+<tr><td class="extcol"><a href="/extension/html">.HTML</a></td><td class="stretchcol">Hypertext Markup Language File</td></tr>
+<tr><td class="extcol"><a href="/extension/js">.JS</a></td><td class="stretchcol">JavaScript File</td></tr>
+<tr><td class="extcol"><a href="/extension/json">.JSON</a></td><td class="stretchcol">JavaScript Object Notation File</td></tr>
+<tr><td class="extcol"><a href="/extension/jsp">.JSP</a></td><td class="stretchcol">Jakarta Server Page</td></tr>
+<tr><td class="extcol"><a href="/extension/php">.PHP</a></td><td class="stretchcol">PHP Source Code File</td></tr>
+<tr><td class="extcol"><a href="/extension/xhtml">.XHTML</a></td><td class="stretchcol">Extensible Hypertext Markup Language File</td></tr>
+</tbody>
+</table>
+</div>
+<a href="/filetypes/web">See all web file types</a>
+<h2 class="heading">Plugin Files</h2>
+<div class="tablewrap">
+<table class="list sortable filetypes">
+<thead>
+<tr>
+<th class="extcol" data-order="asc">Extension</th>
+<th class="stretchcol">File Type</th>
+</tr>
+</thead>
+<tbody>
+<tr><td class="extcol"><a href="/extension/crx">.CRX</a></td><td class="stretchcol">Chrome Extension</td></tr>
+<tr><td class="extcol"><a href="/extension/ecf">.ECF</a></td><td class="stretchcol">Outlook Add-in</td></tr>
+<tr><td class="extcol"><a href="/extension/plugin">.PLUGIN</a></td><td class="stretchcol">Adobe Photoshop Plug-in</td></tr>
+<tr><td class="extcol"><a href="/extension/safariextz">.SAFARIEXTZ</a></td><td class="stretchcol">Apple Safari Extension</td></tr>
+<tr><td class="extcol"><a href="/extension/xpi">.XPI</a></td><td class="stretchcol">Cross-platform Installer Package</td></tr>
+</tbody>
+</table>
+</div>
+<a href="/filetypes/plugin">See all plugin file types</a>
+<h2 class="heading">Font Files</h2>
+<div class="tablewrap">
+<table class="list sortable filetypes">
+<thead>
+<tr>
+<th class="extcol" data-order="asc">Extension</th>
+<th class="stretchcol">File Type</th>
+</tr>
+</thead>
+<tbody>
+<tr><td class="extcol"><a href="/extension/fnt">.FNT</a></td><td class="stretchcol">Windows Font File</td></tr>
+<tr><td class="extcol"><a href="/extension/otf">.OTF</a></td><td class="stretchcol">OpenType Font</td></tr>
+<tr><td class="extcol"><a href="/extension/ttf">.TTF</a></td><td class="stretchcol">TrueType Font</td></tr>
+<tr><td class="extcol"><a href="/extension/woff">.WOFF</a></td><td class="stretchcol">Web Open Font Format File</td></tr>
+<tr><td class="extcol"><a href="/extension/woff2">.WOFF2</a></td><td class="stretchcol">Web Open Font Format 2.0 File</td></tr>
+</tbody>
+</table>
+</div>
+<a href="/filetypes/font">See all font file types</a>
+<h2 class="heading">System Files</h2>
+<div class="tablewrap">
+<table class="list sortable filetypes">
+<thead>
+<tr>
+<th class="extcol" data-order="asc">Extension</th>
+<th class="stretchcol">File Type</th>
+</tr>
+</thead>
+<tbody>
+<tr><td class="extcol"><a href="/extension/ani">.ANI</a></td><td class="stretchcol">Windows Animated Cursor</td></tr>
+<tr><td class="extcol"><a href="/extension/cab">.CAB</a></td><td class="stretchcol">Windows Cabinet File</td></tr>
+<tr><td class="extcol"><a href="/extension/cpl">.CPL</a></td><td class="stretchcol">Windows Control Panel Item</td></tr>
+<tr><td class="extcol"><a href="/extension/cur">.CUR</a></td><td class="stretchcol">Windows Cursor</td></tr>
+<tr><td class="extcol"><a href="/extension/deskthemepack">.DESKTHEMEPACK</a></td><td class="stretchcol">Windows 8 Desktop Theme Pack File</td></tr>
+<tr><td class="extcol"><a href="/extension/dll">.DLL</a></td><td class="stretchcol">Dynamic Link Library</td></tr>
+<tr><td class="extcol"><a href="/extension/dmp">.DMP</a></td><td class="stretchcol">Windows Memory Dump</td></tr>
+<tr><td class="extcol"><a href="/extension/drv">.DRV</a></td><td class="stretchcol">Device Driver</td></tr>
+<tr><td class="extcol"><a href="/extension/icns">.ICNS</a></td><td class="stretchcol">macOS Icon Resource</td></tr>
+<tr><td class="extcol"><a href="/extension/ico">.ICO</a></td><td class="stretchcol">Icon File</td></tr>
+<tr><td class="extcol"><a href="/extension/lnk">.LNK</a></td><td class="stretchcol">Windows Shortcut</td></tr>
+<tr><td class="extcol"><a href="/extension/reg">.REG</a></td><td class="stretchcol">Registry File</td></tr>
+<tr><td class="extcol"><a href="/extension/sys">.SYS</a></td><td class="stretchcol">Windows System File</td></tr>
+</tbody>
+</table>
+</div>
+<a href="/filetypes/system">See all system file types</a>
+<h2 class="heading">Settings Files</h2>
+<div class="tablewrap">
+<table class="list sortable filetypes">
+<thead>
+<tr>
+<th class="extcol" data-order="asc">Extension</th>
+<th class="stretchcol">File Type</th>
+</tr>
+</thead>
+<tbody>
+<tr><td class="extcol"><a href="/extension/cfg">.CFG</a></td><td class="stretchcol">Configuration File</td></tr>
+<tr><td class="extcol"><a href="/extension/ini">.INI</a></td><td class="stretchcol">Windows Initialization File</td></tr>
+<tr><td class="extcol"><a href="/extension/pkg">.PKG</a></td><td class="stretchcol">Symbian Package File</td></tr>
+<tr><td class="extcol"><a href="/extension/prf">.PRF</a></td><td class="stretchcol">Outlook Profile File</td></tr>
+<tr><td class="extcol"><a href="/extension/set">.SET</a></td><td class="stretchcol">Settings File</td></tr>
+</tbody>
+</table>
+</div>
+<a href="/filetypes/settings">See all settings file types</a>
+<h2 class="heading">Encoded Files</h2>
+<div class="tablewrap">
+<table class="list sortable filetypes">
+<thead>
+<tr>
+<th class="extcol" data-order="asc">Extension</th>
+<th class="stretchcol">File Type</th>
+</tr>
+</thead>
+<tbody>
+<tr><td class="extcol"><a href="/extension/asc">.ASC</a></td><td class="stretchcol">PGP ASCII Armored File</td></tr>
+<tr><td class="extcol"><a href="/extension/bin">.BIN</a></td><td class="stretchcol">MacBinary Encoded File</td></tr>
+<tr><td class="extcol"><a href="/extension/enc">.ENC</a></td><td class="stretchcol">Encoded File</td></tr>
+<tr><td class="extcol"><a href="/extension/mim">.MIM</a></td><td class="stretchcol">Multi-Purpose Internet Mail Message File</td></tr>
+<tr><td class="extcol"><a href="/extension/uue">.UUE</a></td><td class="stretchcol">Uuencoded File</td></tr>
+</tbody>
+</table>
+</div>
+<a href="/filetypes/encoded">See all encoded file types</a>
+<h2 class="heading">Compressed Files</h2>
+<div class="tablewrap">
+<table class="list sortable filetypes">
+<thead>
+<tr>
+<th class="extcol" data-order="asc">Extension</th>
+<th class="stretchcol">File Type</th>
+</tr>
+</thead>
+<tbody>
+<tr><td class="extcol"><a href="/extension/7z">.7Z</a></td><td class="stretchcol">7-Zip Compressed File</td></tr>
+<tr><td class="extcol"><a href="/extension/cbr">.CBR</a></td><td class="stretchcol">Comic Book RAR Archive</td></tr>
+<tr><td class="extcol"><a href="/extension/deb">.DEB</a></td><td class="stretchcol">Debian Software Package</td></tr>
+<tr><td class="extcol"><a href="/extension/gz">.GZ</a></td><td class="stretchcol">Gnu Zipped Archive</td></tr>
+<tr><td class="extcol"><a href="/extension/pak">.PAK</a></td><td class="stretchcol">PAK (Packed) File</td></tr>
+<tr><td class="extcol"><a href="/extension/pkg">.PKG</a></td><td class="stretchcol">macOS Installer Package</td></tr>
+<tr><td class="extcol"><a href="/extension/rar">.RAR</a></td><td class="stretchcol">WinRAR Compressed Archive</td></tr>
+<tr><td class="extcol"><a href="/extension/rpm">.RPM</a></td><td class="stretchcol">Red Hat Package Manager File</td></tr>
+<tr><td class="extcol"><a href="/extension/tar.gz">.TAR.GZ</a></td><td class="stretchcol">Compressed Tarball File</td></tr>
+<tr><td class="extcol"><a href="/extension/xapk">.XAPK</a></td><td class="stretchcol">Compressed Android Package</td></tr>
+<tr><td class="extcol"><a href="/extension/zip">.ZIP</a></td><td class="stretchcol">Zipped File</td></tr>
+<tr><td class="extcol"><a href="/extension/zipx">.ZIPX</a></td><td class="stretchcol">Extended Zip Archive</td></tr>
+</tbody>
+</table>
+</div>
+<a href="/filetypes/compressed">See all compressed file types</a>
+<h2 class="heading">Disk Image Files</h2>
+<div class="tablewrap">
+<table class="list sortable filetypes">
+<thead>
+<tr>
+<th class="extcol" data-order="asc">Extension</th>
+<th class="stretchcol">File Type</th>
+</tr>
+</thead>
+<tbody>
+<tr><td class="extcol"><a href="/extension/bin">.BIN</a></td><td class="stretchcol">Binary Disc Image</td></tr>
+<tr><td class="extcol"><a href="/extension/dmg">.DMG</a></td><td class="stretchcol">Apple Disk Image</td></tr>
+<tr><td class="extcol"><a href="/extension/img">.IMG</a></td><td class="stretchcol">Disc Image Data File</td></tr>
+<tr><td class="extcol"><a href="/extension/iso">.ISO</a></td><td class="stretchcol">Disc Image File</td></tr>
+<tr><td class="extcol"><a href="/extension/mdf">.MDF</a></td><td class="stretchcol">Media Disc Image File</td></tr>
+<tr><td class="extcol"><a href="/extension/rom">.ROM</a></td><td class="stretchcol">Read Only Memory Image</td></tr>
+<tr><td class="extcol"><a href="/extension/vcd">.VCD</a></td><td class="stretchcol">Virtual CD</td></tr>
+<tr><td class="extcol"><a href="/extension/vmdk">.VMDK</a></td><td class="stretchcol">Virtual Machine Disk File</td></tr>
+</tbody>
+</table>
+</div>
+<a href="/filetypes/disk_image">See all disk image file types</a>
+<h2 class="heading">Developer Files</h2>
+<div class="tablewrap">
+<table class="list sortable filetypes">
+<thead>
+<tr>
+<th class="extcol" data-order="asc">Extension</th>
+<th class="stretchcol">File Type</th>
+</tr>
+</thead>
+<tbody>
+<tr><td class="extcol"><a href="/extension/appx">.APPX</a></td><td class="stretchcol">Windows App Package </td></tr>
+<tr><td class="extcol"><a href="/extension/c">.C</a></td><td class="stretchcol">C/C++ Source Code File</td></tr>
+<tr><td class="extcol"><a href="/extension/class">.CLASS</a></td><td class="stretchcol">Java Class File</td></tr>
+<tr><td class="extcol"><a href="/extension/config">.CONFIG</a></td><td class="stretchcol">Configuration File</td></tr>
+<tr><td class="extcol"><a href="/extension/cpp">.CPP</a></td><td class="stretchcol">C++ Source Code File</td></tr>
+<tr><td class="extcol"><a href="/extension/cs">.CS</a></td><td class="stretchcol">C# Source Code File</td></tr>
+<tr><td class="extcol"><a href="/extension/h">.H</a></td><td class="stretchcol">C/C++/Objective-C Header File</td></tr>
+<tr><td class="extcol"><a href="/extension/java">.JAVA</a></td><td class="stretchcol">Java Source Code File</td></tr>
+<tr><td class="extcol"><a href="/extension/kt">.KT</a></td><td class="stretchcol">Kotlin Source Code File</td></tr>
+<tr><td class="extcol"><a href="/extension/lua">.LUA</a></td><td class="stretchcol">Lua Source File</td></tr>
+<tr><td class="extcol"><a href="/extension/m">.M</a></td><td class="stretchcol">Objective-C Implementation File</td></tr>
+<tr><td class="extcol"><a href="/extension/md">.MD</a></td><td class="stretchcol">Markdown Documentation File</td></tr>
+<tr><td class="extcol"><a href="/extension/pl">.PL</a></td><td class="stretchcol">Perl Script</td></tr>
+<tr><td class="extcol"><a href="/extension/py">.PY</a></td><td class="stretchcol">Python Script</td></tr>
+<tr><td class="extcol"><a href="/extension/sb3">.SB3</a></td><td class="stretchcol">Scratch 3.0 Project File</td></tr>
+<tr><td class="extcol"><a href="/extension/sln">.SLN</a></td><td class="stretchcol">Visual Studio Solution File</td></tr>
+<tr><td class="extcol"><a href="/extension/swift">.SWIFT</a></td><td class="stretchcol">Swift Source Code File</td></tr>
+<tr><td class="extcol"><a href="/extension/unity">.UNITY</a></td><td class="stretchcol">Unity Scene File</td></tr>
+<tr><td class="extcol"><a href="/extension/vb">.VB</a></td><td class="stretchcol">Visual Basic Project Item File</td></tr>
+<tr><td class="extcol"><a href="/extension/vcxproj">.VCXPROJ</a></td><td class="stretchcol">Visual C++ Project</td></tr>
+<tr><td class="extcol"><a href="/extension/xcodeproj">.XCODEPROJ</a></td><td class="stretchcol">Xcode Project</td></tr>
+<tr><td class="extcol"><a href="/extension/yml">.YML</a></td><td class="stretchcol">YAML Document</td></tr>
+</tbody>
+</table>
+</div>
+<a href="/filetypes/developer">See all developer file types</a>
+<h2 class="heading">Backup Files</h2>
+<div class="tablewrap">
+<table class="list sortable filetypes">
+<thead>
+<tr>
+<th class="extcol" data-order="asc">Extension</th>
+<th class="stretchcol">File Type</th>
+</tr>
+</thead>
+<tbody>
+<tr><td class="extcol"><a href="/extension/abk">.ABK</a></td><td class="stretchcol">Automatic Backup File</td></tr>
+<tr><td class="extcol"><a href="/extension/arc">.ARC</a></td><td class="stretchcol">Norton Backup Archive</td></tr>
+<tr><td class="extcol"><a href="/extension/bak">.BAK</a></td><td class="stretchcol">Backup File</td></tr>
+<tr><td class="extcol"><a href="/extension/tmp">.TMP</a></td><td class="stretchcol">Temporary File</td></tr>
+</tbody>
+</table>
+</div>
+<a href="/filetypes/backup">See all backup file types</a>
+<h2 class="heading">Misc Files</h2>
+<div class="tablewrap">
+<table class="list sortable filetypes">
+<thead>
+<tr>
+<th class="extcol" data-order="asc">Extension</th>
+<th class="stretchcol">File Type</th>
+</tr>
+</thead>
+<tbody>
+<tr><td class="extcol"><a href="/extension/crdownload">.CRDOWNLOAD</a></td><td class="stretchcol">Chrome Partially Downloaded File</td></tr>
+<tr><td class="extcol"><a href="/extension/ics">.ICS</a></td><td class="stretchcol">Calendar File</td></tr>
+<tr><td class="extcol"><a href="/extension/msi">.MSI</a></td><td class="stretchcol">Windows Installer Package</td></tr>
+<tr><td class="extcol"><a href="/extension/nomedia">.NOMEDIA</a></td><td class="stretchcol">Android No Media File</td></tr>
+<tr><td class="extcol"><a href="/extension/part">.PART</a></td><td class="stretchcol">Partially Downloaded File</td></tr>
+<tr><td class="extcol"><a href="/extension/pkpass">.PKPASS</a></td><td class="stretchcol">Apple Wallet Pass</td></tr>
+<tr><td class="extcol"><a href="/extension/torrent">.TORRENT</a></td><td class="stretchcol">BitTorrent File</td></tr>
+</tbody>
+</table>
+</div>
+<a href="/filetypes/misc">See all misc file types</a>
+<div class="adBotLB">
+<div id="div-gpt-ad-1589913000288-0">
+</div>
+</div>
+</article>
+</div>
+<div id="right">
+<div class="adRightSky">
+<div id="div-gpt-ad-1589922228072-0">
+</div>
+</div>
+</div>
+</div>
+</main>
+<footer id="sitefooter"><a href="https://sharpened.com/" target="_blank" rel="noopener"><span class="copyright">&copy; 2022 Sharpened Productions</span></a> &nbsp;|&nbsp; <a href="/terms">Terms of Use</a> &nbsp;|&nbsp; <a href="/privacy">Privacy Policy</a> &nbsp;|&nbsp; <a href="/about">About</a> &nbsp;|&nbsp; <a href="/contact">Contact</a></footer>
+</div>
+<script defer src="https://fileinfo.com/js/fi.js"></script>
+</body>
+</html>
