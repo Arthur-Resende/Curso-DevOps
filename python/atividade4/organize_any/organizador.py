@@ -3,7 +3,6 @@ from file_types import file_types as file_type_list
 
 class Organizer():
     def __init__(self, user: str, path: str):
-        self.user = user
         self.path = path
         self.file_types = {}
     
