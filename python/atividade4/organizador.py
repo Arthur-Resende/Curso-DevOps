@@ -1,35 +1,49 @@
 import os
-import file_types as file_type_dict
+from file_types import file_types as file_type_list
 
-def define_file_types():
-    download_file_list = os.scandir("/home/arthur/Downloads")
-    files_by_type = {}
-    for downloaded_file in download_file_list:
-        file_extention = downloaded_file.name[downloaded_file.name.find('.'):].upper()
-        if downloaded_file.is_dir() == False:
-            for file_type in file_type_dict.keys():
-                file_type_list = file_type_dict[file_type]
-                if file_extention in file_type_list:
-                    files_by_type[downloaded_file.name] = file_type
+class Organizer():
+    def __init__(self):
+        self.user = os.getlogin()
+        self.current_os = os.name
+        if self.current_os == "posix":
+            self.path = "/home/%s/Downloads" %self.user
+        else:
+            self.path = "C:/Users/%s/Downloads" %self.user
 
-        elif downloaded_file.name not in file_type_dict.keys():
-            files_by_type[downloaded_file.name] = "Folders"
+        self.organized_files = {}
 
-    return files_by_type
+    def define_file_types(self):
+        folder_files = os.scandir(self.path)
+        for downloaded_file in folder_files:
+            extention_index = downloaded_file.name.find('.')
+            file_extention = downloaded_file.name[extention_index:].upper()
+            if downloaded_file.is_dir() == False:
+                for file_type in file_type_list:
+                    extention_list = file_type_list[file_type]
+                    if file_extention in extention_list:
+                        self.organized_files[downloaded_file.name] = file_type
 
-def create_dirs(files_by_type: dict):
-    for file_type in files_by_type.items():
-        try:
-            os.mkdir("/home/arthur/Downloads/%s" %file_type)
-        except:
-            pass
+            elif downloaded_file.name not in file_type_list.keys():
+                self.organized_files[downloaded_file.name] = "Folders"
 
-def move_files(base_path, files_by_type: dict):
-    for file in files_by_type.keys():
-        src = "%s/%s" %(base_path, file)
-        dst = "%s/%s/%s" %(base_path, files_by_type[file], file)
-        os.rename(src, dst)
+    def create_dirs(self):
+        for file_type in self.organized_files.values():
+            try:
+                os.mkdir("%s/%s" %(self.path, file_type))
+            except:
+                pass
 
-arquivos_por_tipo = define_file_types()
-create_dirs(arquivos_por_tipo)
-move_files("/home/arthur/Downloads", arquivos_por_tipo)
+    def move_files(self):
+        for file in self.organized_files.keys():
+            try:
+                src = "/%s/%s" %self.path, file
+                dst = "/%s/%s/%s" %(self.path, self.organized_files[file], file)
+                os.rename(src, dst)
+            except:
+                pass
+
+organizador = Organizer()
+organizador.define_file_types()
+organizador.create_dirs()
+organizador.move_files()
+print(os.name)
