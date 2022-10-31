@@ -41,9 +41,3 @@ class Organizer():
                 os.rename(src, dst)
             except:
                 pass
-
-organizador = Organizer()
-organizador.define_file_types()
-organizador.create_dirs()
-organizador.move_files()
-print(os.name)
