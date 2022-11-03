@@ -120,8 +120,3 @@ class Organizer():
                     os.rename(src, dst)
                 except Exception as error:
                     raise error
-
-organizer = Organizer()
-organizer.define_file_types()
-organizer.create_dirs()
-organizer.move_files()
