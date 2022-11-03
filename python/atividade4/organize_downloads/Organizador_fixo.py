@@ -31,6 +31,12 @@ file_type_list = {
     "Misc Files":['.CRDOWNLOAD', '.ICS', '.MSI', '.NOMEDIA', '.PART', '.PKPASS', '.TORRENT'],
 }
 
+def append_dict(key, dict, value):
+    if key not in dict:
+        dict[key] = [value]
+    else:
+        dict[key].append(value)
+
 class Organizer():
     def __init__(self):
         self.user = os.getlogin()
@@ -44,25 +50,22 @@ class Organizer():
 
     def define_file_types(self):
         for file in os.scandir(self.path):
-            extention_index = file.name.find('.')
-            extention = file.name[extention_index:].upper()
+            ext_index = file.name.find('.')
+            extention = file.name[ext_index:].upper()
             if file.is_dir() == False:
                 for folder in file_type_list:
-                    extention_list = file_type_list[folder]
-                    if extention in extention_list:
-                        if folder not in self.organized_files:
-                            self.organized_files[folder] = [file.name]
-                        else:
-                            self.organized_files[folder].append(file.name)
+                    ext_list = file_type_list[folder]
+                    if extention in ext_list:
+                        append_dict(folder, self.organized_files, file.name)
 
-                if "Others" not in self.organized_files:
-                    self.organized_files["Others"] = [file.name]
-                else:
-                    self.organized_files["Others"].append(file.name)
+                append_dict("Others", self.organized_files, file.name)
 
-            elif (file.name != "Folders" ) and (file.name != "Others") and file.name not in file_type_list.keys():
-                self.organized_files["Folders"] = file.name
-        print(self.organized_files)
+            elif (
+                file.name != "Folders" and
+                file.name != "Others" and
+                file.name not in file_type_list.keys()
+                ):
+                append_dict("Folders", self.organized_files, file.name)
 
     def create_dirs(self):
         for folder in self.organized_files.keys():
