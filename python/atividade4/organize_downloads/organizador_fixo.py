@@ -112,11 +112,11 @@ class Organizer():
         Reads folder-file dictionary and moves files from
         Downloads dir to assiged folder.
         """
-        for folder_file in self.organized_files.items():
-            for file in folder_file[1]:
+        for assigned_folders in self.organized_files.items():
+            for file in assigned_folders[1]:
                 try:
                     src = f"/{self.path}/{file}"
-                    dst = f"/{self.path}/{folder_file[0]}/{file}"
+                    dst = f"/{self.path}/{assigned_folders[0]}/{file}"
                     os.rename(src, dst)
                 except Exception as error:
                     raise error
