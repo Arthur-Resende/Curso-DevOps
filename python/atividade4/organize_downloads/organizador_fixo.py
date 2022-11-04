@@ -20,7 +20,7 @@ file_type_list = {
     "System Files":[".DLL", ".DMP", ".DRV", ".ICNS", ".ICO", ".LNK", ".REG", ".SYS"],
     "Settings Files":[".CFG", ".INI", ".PKG", ".PRF", ".SET"],
     "Encoded Files":[".ASC", ".BIN", ".ENC", ".MIM", ".UUE"],
-    "Compressed Files":[".PKG", ".RAR", ".RPM", ".gz">.TAR.GZ", ".XAPK", ".ZIP", ".ZIPX"],
+    "Compressed Files":[".PKG", ".RAR", ".RPM", ".gz", ".TAR.GZ", ".XAPK", ".ZIP", ".ZIPX"],
     "Disk Image Files":[".BIN", ".DMG", ".IMG", ".ISO", ".MDF", ".ROM", ".VCD", ".VMDK"],
     "Developer Files":[".KT", ".LUA", ".M", ".MD", ".PL", ".PY", ".SB3", ".SLN", ".SWIFT", ".UNITY", ".VB",".VCXPROJ", ".XCODEPROJ", ".YML"],
     "Backup Files":[".ABK", ".ARC", ".BAK", ".TMP"],
