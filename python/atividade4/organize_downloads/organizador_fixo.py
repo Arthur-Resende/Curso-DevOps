@@ -5,7 +5,9 @@ import os
 
 file_type_list = {
     "Video files": [".MPG", ".MOV", ".WMV", ".RM"],
-    "Text Files":[".DOC", ".DOCX", ".EML", ".LOG",".MSG", ".ODT", ".PAGES", ".RTF", ".TEX", ".TXT",".WPD"],
+    "Text Files":[
+        ".DOC", ".DOCX", ".EML", ".LOG",".MSG", ".ODT", ".PAGES", ".RTF", ".TEX", ".TXT",".WPD"
+        ],
     "Data Files":[".SDF", ".TAR", ".VCF", ".XML"],
     "Audio Files":[".AIF", ".FLAC", ".M3U", ".M4A", ".MID", ".MP3", ".OGG", ".WAV", ".WMA"],
     "Video Files":[".SWF", ".TS", ".VOB", ".WMV"],
@@ -22,7 +24,10 @@ file_type_list = {
     "Encoded Files":[".ASC", ".BIN", ".ENC", ".MIM", ".UUE"],
     "Compressed Files":[".PKG", ".RAR", ".RPM", ".gz", ".TAR.GZ", ".XAPK", ".ZIP", ".ZIPX"],
     "Disk Image Files":[".BIN", ".DMG", ".IMG", ".ISO", ".MDF", ".ROM", ".VCD", ".VMDK"],
-    "Developer Files":[".KT", ".LUA", ".M", ".MD", ".PL", ".PY", ".SB3", ".SLN", ".SWIFT", ".UNITY", ".VB",".VCXPROJ", ".XCODEPROJ", ".YML"],
+    "Developer Files":[
+        ".KT", ".LUA", ".M", ".MD", ".PL", ".PY", ".SB3", ".SLN", ".SWIFT", ".UNITY", ".VB",
+        ".VCXPROJ", ".XCODEPROJ", ".YML"
+        ],
     "Backup Files":[".ABK", ".ARC", ".BAK", ".TMP"],
     "Misc Files":[".CRDOWNLOAD", ".ICS", ".MSI", ".NOMEDIA", ".PART", ".PKPASS", ".TORRENT"],
 }
