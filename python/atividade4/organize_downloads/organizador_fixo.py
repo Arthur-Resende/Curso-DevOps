@@ -74,7 +74,8 @@ class Organizer():
                         append_dict(file_type_ext_list[0], self.org_files, file.name)
                         file_not_assigned = False
 
-                if file_not_assigned: append_dict("Others", self.org_files, file.name)
+                if file_not_assigned:
+                    append_dict("Others", self.org_files, file.name)
 
             elif (
                 file.name != "Folders" and
