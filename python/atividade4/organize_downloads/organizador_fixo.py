@@ -25,7 +25,8 @@ file_type_list = {
     "Compressed Files":[".PKG", ".RAR", ".RPM", ".gz", ".TAR.GZ", ".XAPK", ".ZIP", ".ZIPX"],
     "Disk Image Files":[".BIN", ".DMG", ".IMG", ".ISO", ".MDF", ".ROM", ".VCD", ".VMDK"],
     "Developer Files":[
-        ".KT", ".LUA", ".M", ".MD", ".PL", ".PY", ".SB3", ".SLN", ".SWIFT", ".UNITY", ".VB",".VCXPROJ", ".XCODEPROJ", ".YML"
+        ".KT", ".LUA", ".M", ".MD", ".PL", ".PY", ".SB3", ".SLN", ".SWIFT", ".UNITY", ".VB",
+        ".VCXPROJ", ".XCODEPROJ", ".YML"
         ],
     "Backup Files":[".ABK", ".ARC", ".BAK", ".TMP"],
     "Misc Files":[".CRDOWNLOAD", ".ICS", ".MSI", ".NOMEDIA", ".PART", ".PKPASS", ".TORRENT"],
