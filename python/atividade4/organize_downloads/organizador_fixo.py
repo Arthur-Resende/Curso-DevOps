@@ -76,14 +76,14 @@ class Organizer():
         """
         for file in os.scandir(self.path):
             if file.is_dir() is False:
-                item_is_defined = False
-                for folder_file in file_type_list.items():
+                file_is_assigned = False
+                for file_type_ext_list in file_type_list.items():
                     extention = file.name[file.name.find('.'):].upper()
-                    if extention in folder_file[1]:
-                        append_dict(folder_file[0], self.organized_files, file.name)
-                        item_is_defined = True
+                    if extention in file_type_ext_list[1]:
+                        append_dict(file_type_ext_list[0], self.organized_files, file.name)
+                        file_is_assigned = True
 
-                if item_is_defined is False:
+                if file_is_assigned is False:
                     append_dict("Others", self.organized_files, file.name)
 
             elif (
