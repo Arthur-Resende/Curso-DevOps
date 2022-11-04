@@ -56,12 +56,11 @@ class Organizer():
     def __init__(self):
         self.user = os.getlogin()
         self.current_os = os.name
+        self.org_files = {}
         if self.current_os == "posix":
             self.path = f"/home/{self.user}/Downloads"
         else:
             self.path = f"C:/Users/{self.user}/Downloads"
-
-        self.org_files = {}
 
     def define_file_types(self):
         """
