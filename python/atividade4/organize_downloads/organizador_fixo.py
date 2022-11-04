@@ -45,8 +45,7 @@ class Organizer():
     """
     Class of download folder oganizer, has 3 functions
     - define_file_types(): assigns files to foldes
-    - create_dirs(): creates assigned directiories for files
-      to go to.
+    - create_dirs(): creates assigned directiories for files to go to.
     - move_files(): moves files towards assigned directory.
     """
     def __init__(self):
@@ -61,9 +60,8 @@ class Organizer():
 
     def define_file_types(self):
         """
-        Scans Downloads dir, checks name of all files,
-        and assigns files to folders based on the extention
-        of the file.
+        Scans Downloads dir, checks name of all files, and assigns files to folders based on the
+        extention of the file.
         """
         for file in os.scandir(self.path):
             if file.is_dir() is False:
@@ -86,8 +84,7 @@ class Organizer():
 
     def create_dirs(self):
         """
-        Reads folder-file dictionary and creates all assigned
-        folders.
+        Reads folder-file dictionary and creates all assigned folders.
         """
         for folder in self.org_files:
             try:
@@ -100,8 +97,7 @@ class Organizer():
 
     def move_files(self):
         """
-        Reads folder-file dictionary and moves files from
-        Downloads dir to assiged folder.
+        Reads folder-file dictionary and moves files from Downloads dir to assiged folder.
         """
         for assigned_folder in self.org_files.items():
             for file in assigned_folder[1]:
