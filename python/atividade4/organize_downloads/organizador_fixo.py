@@ -57,48 +57,38 @@ class Organizer():
         else:
             self.path = f"C:/Users/{self.user}/Downloads"
 
-        self.organized_files = {}
+        self.org_files = {}
 
     def define_file_types(self):
         """
         Scans Downloads dir, checks name of all files,
         and assigns files to folders based on the extention
         of the file.
-
-        Files and assigned folders saved in dictionary with
-        format:
-            organized_files {
-                "<folder_1>": [<file list>],
-                "<folder_2>": [<file list>],
-                ...
-                "<folder_n>": [<file list>]
-            }
         """
         for file in os.scandir(self.path):
             if file.is_dir() is False:
-                file_is_assigned = False
+                file_not_assigned = True
                 for file_type_ext_list in file_type_list.items():
                     extention = file.name[file.name.find('.'):].upper()
                     if extention in file_type_ext_list[1]:
-                        append_dict(file_type_ext_list[0], self.organized_files, file.name)
-                        file_is_assigned = True
+                        append_dict(file_type_ext_list[0], self.org_files, file.name)
+                        file_not_assigned = False
 
-                if file_is_assigned is False:
-                    append_dict("Others", self.organized_files, file.name)
+                if file_not_assigned: append_dict("Others", self.org_files, file.name)
 
             elif (
                 file.name != "Folders" and
                 file.name != "Others" and
                 file.name not in file_type_list
                 ):
-                append_dict("Folders", self.organized_files, file.name)
+                append_dict("Folders", self.org_files, file.name)
 
     def create_dirs(self):
         """
         Reads folder-file dictionary and creates all assigned
         folders.
         """
-        for folder in self.organized_files:
+        for folder in self.org_files:
             try:
                 os.mkdir(f"{self.path}/{folder}")
             except OSError as error:
@@ -112,7 +102,7 @@ class Organizer():
         Reads folder-file dictionary and moves files from
         Downloads dir to assiged folder.
         """
-        for assigned_folders in self.organized_files.items():
+        for assigned_folders in self.org_files.items():
             for file in assigned_folders[1]:
                 try:
                     src = f"/{self.path}/{file}"
