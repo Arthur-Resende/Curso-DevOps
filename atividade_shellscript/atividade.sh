@@ -5,7 +5,8 @@ milestone=90
 message="Alerta, o uso de cpu da máquina superou ${milestone}%"
 
 if [ ${cpu_use_total%%.*} -gt $milestone ]; then
-    echo "email enviado"
-    echo "${message}" | mail -s "Alerta" resendemw3@gmail.com
+    echo "Uso do cpu está em ${cpu_use_total}%, superando a marca de ${milestone}, alerta será enviado por email."
+    echo "${message}" | mail -s "Alerta" arthurresendefaria@gmail.com
+    echo "Email enviado"
     sleep 60
 fi

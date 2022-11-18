@@ -1,4 +1,4 @@
 while true; do
-    echo doing process
+    echo executing process...
     $(pwd)/atividade.sh
 done
