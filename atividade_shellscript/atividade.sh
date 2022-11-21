@@ -1,5 +1,5 @@
 #!/bin/bash
-email=arthurresendefaria@gmail.com
+email=arthur.faria@globalhitss.com.br
 limit=90
 
 while getopts e:l:h flag
