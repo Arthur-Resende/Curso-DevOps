@@ -5,5 +5,5 @@ Cpu monitor with email alert
 
 Options:
   -l                       Limit which will send alarm to email in case cpu use exceeds it. (defaut 90)
-  -e                       Email to send alarm to (default arthurresendefaria@gmail.com)
+  -e                       Email to send alarm to (default arthur.faria@globalhitss.com.br)
 
