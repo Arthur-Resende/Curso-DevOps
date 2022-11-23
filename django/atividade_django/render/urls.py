@@ -1,8 +1,10 @@
 from django.urls import path
+from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
 from . import views
 
 urlpatterns = [
     path('', views.index, name='index'),
-    path('verificador/<int:arg_id>', views.verificador, name='outra view')
 ]
+
+urlpatterns += staticfiles_urlpatterns()
