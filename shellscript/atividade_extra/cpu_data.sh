@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# Coleta dados
 model=`cat /proc/cpuinfo | grep -i 'model name' | awk '{print $4" "$5" "$6" "$7" "$8" "$9}' | head -n1`
 cores=`cat /proc/cpuinfo | grep -i 'cpu cores' | awk '{print $4}' | head -n 1`
 threads=`cat /proc/cpuinfo | grep -i 'model name' | awk '{print $5" "$6" "$7" "$8" "$9}' | wc -l`
