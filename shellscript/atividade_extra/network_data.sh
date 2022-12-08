@@ -10,7 +10,7 @@ conectados_tcp=`bc <<<"$(ss -t | wc -l) - 1"`
 
 # Escreve dados
 printf "${BOLD}
-${WHITE}Estatísticas de socketes
+${WHITE}ESTATÍSTICAS DE REDE
 
 ${GREEN}Todos os sockets   ${WHITE}------------------------- $todos
 ${GREEN}Sockets em espera  ${WHITE}------------------------- $em_espera
