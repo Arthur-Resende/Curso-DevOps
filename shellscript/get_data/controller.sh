@@ -1,14 +1,12 @@
 #!/bin/bash
 
 # Formatação ANSI
-WHITE='\033[37m'
-GREEN='\033[32m'
-BOLD='\033[1m'
+WHITE='\033[1;37m'
+GREEN='\033[1;32m'
 
 # Imprime dados formatados
 printer() {
     counter=0
-    printf "${BOLD}"
     for arg in $@; do
         if [ ${counter} == 1 ]; then
             printf "${GREEN}%-19s" $arg | tr '.' ' '
@@ -34,3 +32,8 @@ do
         n) printer `./collect/network_data.sh`;;
     esac
 done
+
+if [ $OPTIND -eq 1 ]; then
+    printer `./collect/mem_data.sh`
+    printer `./collect/cpu_data.sh`
+fi
