@@ -25,6 +25,7 @@ printer() {
 # Controla quais dados serão coletados
 while getopts mcdne flag
 do
+    HAS_OPTIONS=1
     case "${flag}" in
         m) printer `./collect/mem_data.sh`;;
         c) printer `./collect/cpu_data.sh`;;
@@ -33,7 +34,8 @@ do
     esac
 done
 
-if [ $OPTIND -eq 1 ]; then
+if [[ $HAS_OPTIONS != 1 ]]; then
     printer `./collect/mem_data.sh`
     printer `./collect/cpu_data.sh`
+    exit 0
 fi

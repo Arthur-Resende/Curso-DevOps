@@ -9,5 +9,4 @@ em_espera_tcp=`bc <<<"$(ss -lt | wc -l) - 1"`
 conectados_tcp=`bc <<<"$(ss -t | wc -l) - 1"`
 
 # Escreve dados
-printf "ESTATÍSTICAS.DE.REDE Todos.os.sockets $todos Sockets.em.espera $em_espera Sockets.conectados $conectados Sockets.TCP $todos_tcp TCP.em.espera $em_espera_tcp TCP.conectados $conectados_tcp
-\n\n"
+printf "ESTATÍSTICAS.DE.REDE Todos.os.sockets $todos Sockets.em.espera $em_espera Sockets.conectados $conectados Sockets.TCP $todos_tcp TCP.em.espera $em_espera_tcp TCP.conectados $conectados_tcp"
