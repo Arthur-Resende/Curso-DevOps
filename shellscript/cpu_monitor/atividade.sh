@@ -1,6 +1,9 @@
 #!/bin/bash
-email=arthur.faria@globalhitss.com.br
-limit=90
+
+if [ $OPTIND == 1 ]; then
+    email=arthur.faria@globalhitss.com.br
+    limit=90
+fi
 
 while getopts e:l:h flag
 do
