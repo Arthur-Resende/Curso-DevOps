@@ -1,8 +1,9 @@
 #!/bin/bash
 
-# Formatação ANSI
+# Formatação ANSI e diretório base
 WHITE='\033[1;37m'
 GREEN='\033[1;32m'
+BASE_DIR='/home/tatiane/Curso-DevOps/shellscript/get_data/'
 
 # Imprime dados formatados
 printer() {
@@ -23,19 +24,19 @@ printer() {
 }
 
 # Controla quais dados serão coletados
-while getopts mcdne flag
+while getopts mcsn flag
 do
     HAS_OPTIONS=1
     case "${flag}" in
-        m) printer `./collect/mem_data.sh`;;
-        c) printer `./collect/cpu_data.sh`;;
-        d) printer `./collect/disk_data.sh`;;
-        n) printer `./collect/network_data.sh`;;
+        m) printer `${BASE_DIR}/collect/mem_data.sh`;;
+        c) printer `${BASE_DIR}/collect/cpu_data.sh`;;
+        s) printer `${BASE_DIR}/collect/disk_data.sh`;;
+        n) printer `${BASE_DIR}/collect/network_data.sh`;;
     esac
 done
 
 if [[ $HAS_OPTIONS != 1 ]]; then
-    printer `./collect/mem_data.sh`
-    printer `./collect/cpu_data.sh`
+    printer `${BASE_DIR}/collect/mem_data.sh`
+    printer `${BASE_DIR}/collect/cpu_data.sh`
     exit 0
 fi
