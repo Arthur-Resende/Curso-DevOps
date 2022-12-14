@@ -12,6 +12,6 @@
   
   - name: Changing content to html file
     copy:
-      src: /home/tatiane/atividade_ansible/index.html
+      src: /home/tatiane/atividade_3/index.html
       dest: /var/www/html/index.html
 ...
