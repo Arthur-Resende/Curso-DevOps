@@ -3,14 +3,12 @@
   gather_facts: False
 
   tasks:
-  - name: Installing apache
-    apt:
+  - apt:
       name: apache2
       state: latest
       update_cache: yes
   
-  - name: Changing content to html file
-    copy:
+  - copy:
       src: ./index.html
       dest: /var/www/html/index.html
 ...
