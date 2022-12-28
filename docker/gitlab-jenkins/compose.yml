@@ -1,0 +1,27 @@
+#c7Y99$rs9AU!
+#glpat-HD1sPXAzxPjpVPzC8H_D
+version: '3.6'
+services:
+  gitlab:
+    image: 'gitlab/gitlab-ee:latest'
+    restart: always
+    hostname: 'gitlab.arthur.com'
+    ports:
+      - '80:80'
+      - '443:443'
+      - '22:22'
+    volumes:
+      - '/srv/gitlab/config:/etc/gitlab'
+      - '/srv/gitlab/logs:/var/log/gitlab'
+      - '/srv/gitlab/data:/var/opt/gitlab'
+    shm_size: '256m'
+  jenkins:
+    image: jenkins/jenkins:lts-jdk11
+    restart: on-failure
+    ports:
+      - 8080:8080
+      - 50000:50000
+    volumes:
+      - jenkins-data:/var/jenkins_home
+volumes:
+  jenkins-data:
