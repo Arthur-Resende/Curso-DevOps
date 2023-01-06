@@ -1,30 +1,45 @@
-"""
-Serves responses to GET requests, base file in '/' and status codes in their respective paths
-(eg. '/200' or '/404')
-"""
-from http.server import HTTPServer, BaseHTTPRequestHandler
-from os import chdir
+# pylint: disable=missing-module-docstring
+# pylint: disable=missing-class-docstring
+# pylint: disable=missing-function-docstring
 
-chdir("C:/Users/Arthur/Desktop/treinamento/python/pyapi")
+from http.server import HTTPServer, BaseHTTPRequestHandler
+from urllib.parse import urlparse
+import json
+
+db = {
+    "name" : "",
+    "tasks" : []
+}
 
 class Handler(BaseHTTPRequestHandler):
-    """
-    Instance of class BaseHTTPRequestHandler, since the class itself cannot respond to requests and
-    SimpleHTTPRequestHandler only serves files.
-    """
     def do_GET(self):
-        """Responds to GET requests"""
-        match self.path:
-            case "/":
-                f = open("./index.html", 'r', encoding="utf-8")
-                self.wfile.write(f)
+        self.send_response(200)
+        self.send_header("Content-Type:", "text/plain; encoding: utf-8")
+        self.end_headers()
+        self.wfile.write(json.dumps(db).encode('utf-8'))
 
-            case "/200":
-                self.send_response(200)
-                self.send_header("Content-Type:", "text/plain; encoding: utf-8")
-                self.end_headers()
-                self.wfile.write(b'hello world')
+    def do_POST(self):
+        query = urlparse(self.path, "scheme://netloc/path;parameters?query#fragment").query
+        query_items = dict(qc.split('=') for qc in query.split('&'))
+        if "name" in query_items.keys():
+            self.send_response(200)
+            self.send_header("Content-Type:", "text/plain; encoding: utf-8")
+            self.end_headers()
+            self.wfile.write("Name changed successfully".encode('utf-8'))
+            db["name"] = query_items["name"]
+        
+        else:
+            self.send_response(404)
+            self.send_header("Content-Type:", "text/plain; encoding: utf-8")
+            self.end_headers()
+            self.wfile.write("Variable \"name\" not defined".encode('utf-8'))
 
-server_address = ('', 8000)
+    def do_DELETE(self):
+        print("delete request received")
+    
+    def do_PUT(self):
+        print("put request received")
+
+server_address = ('0.0.0.0', 8000)
 httpd = HTTPServer(server_address, Handler)
 httpd.serve_forever()
