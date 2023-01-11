@@ -5,115 +5,117 @@ from markupsafe import escape
 from db import database
 
 app = Flask(__name__)
-app.config['JSON_SORT_KEYS'] = False
+app.config["JSON_SORT_KEYS"] = False
 
 # GET request handler to get entire database
-@app.route('/people', methods=['GET'])
+@app.route("/people", methods=["GET"])
 def get_all_database():
     return database
 
 # data cleaner, makes sure data follows specifications
-def data_cleaner(request_data):
-    if isinstance(request_data, str):
-        if request_data.isnumeric():
-            return int(request_data)
-        else:
-            try:
-                return int(float(request_data))
-
-            except:
-                return request_data.replace('_', ' ').replace('-', ' ').lower()
-
-    elif isinstance(request_data, float):
-        return int(request_data)
-    elif isinstance(request_data, int):
-        return request_data
-    else:
-        print("type not supported yet")
+def data_cleaner(data, field):
+    match field.lower():
+        case "id":
+            return int(float(data))
+        case "first_name":
+            return str(data).replace('-', ' ').replace('_', ' ').title()
+        case "last_name":
+            return str(data).replace('-', ' ').replace('_', ' ').title()
+        case "email":
+            return str(data).lower()
 
 # GET request handler to get specific person, by value in field
-@app.route('/people/<key>/<value>', methods=['GET'])
+@app.route("/people/<key>/<value>", methods=["GET"])
 def get_person_by_field(key, value):
     counter = 0
     person_list = []
     for person in database:
-        if data_cleaner(value) == data_cleaner(person[key]):
+        if data_cleaner(value, key) == person[key]:
             person_list.append(database[counter])
         counter += 1
-    return person_list if person_list else f"no person found with that {key.replace('_', ' ')}"
+    return person_list if person_list else f"No person found with that {key.replace('_', ' ')}"
 
 # POST request handler to add one or more horses to database
-@app.route('/horses/add', methods=['POST'])
-def add_horse():
+@app.route("/people/add", methods=["POST"])
+def add_person():
     # Verify if request is of type list, meaning more than one horse will be added
     if isinstance(request.json, list):
-        horse = []
+        person_list = []
         counter = 1
         for item in request.json:
-            horse.append({
+            person.append({
                 "id": len(database) + counter,
-                "name": item['name']
+                "first_name": data_cleaner(item["first_name"], "first_name"),
+                "last_name": data_cleaner(item["last_name"], "last_name"),
+                "email": data_cleaner(item["email"], "email")
             })
             counter += 1
-        database.extend(horse)
+        database.extend(person)
         return {
-            "message": "Horse list extended successfully",
-            "data": horse
+            "message": "Data added successfully to database",
+            "data": person_list
         }
 
-    # if not of type list, must be type dict/json, meaning only one horse will be added
+    # if not of type list, must be type dict/json, meaning only one person will be added
     else:
-        print(data_cleaner(request.json['name']))
-        horse = {
+        person = {
             "id": len(database) + 1,
-            "name": request.json['name']
+            "first_name": data_cleaner(request.json["first_name"], "first_name"),
+            "last_name": data_cleaner(request.json["last_name"], "last_name"),
+            "email": data_cleaner(request.json["email"], "email")
         }
-        database.append(horse)
+        database.append(person)
         return {
-            "message": "Horse added successfully",
-            "data": horse
+            "message": "Data added successfully to database",
+            "data": person
         }
 
-# DELETE request handler to delete one or more horses
-@app.route('/horses/delete', methods=['DELETE'])
+# DELETE request handler to delete one or more person
+@app.route("/people/delete", methods=["DELETE"])
 def delete_horse():
-    # Verify if request is of type list, meaning more than one horse will be deleted
+    # Verify if request is of type list, meaning more than one person will be deleted
     if isinstance(request.json, list):
         for item in request.json:
-            del database[item['id'] - 1]
-        return {"message": "Horses deleted successfully"}
+            request_id = data_cleaner(item["id"], "id")
+            del database[request_id - 1]
+        return {"message": "Data deleted successfully"}
 
-    # if not of type list, must be type dict/json, meaning only one horse will be deleted
+    # if not of type list, must be type dict/json, meaning only one person will be deleted
     else:
-        request_id = request.json['id']
+        request_id = data_cleaner(request.json["id"], "id")
         for item in database:
-            if item['id'] == request_id:
+            if item["id"] == request_id:
                 del database[request_id - 1]
                 return {"message": "Horse deleted successfully"}
+        return {"message": "Id not in database"}
 
-@app.route('/horses/update', methods=['PUT'])
+@app.route("/people/update", methods=["PUT"])
 def update_horse():
-    # Verify if request is of type list, meaning more than one horse will be updated
+    # Verify if request is of type list, meaning more than one person will be updated
     if isinstance(request.json, list):
         for request_item in request.json:
             for db_item in database:
-                if int(db_item['id']) == int(request_item['id']):
-                    db_item_id = db_item['id'] - 1
-                    database[db_item_id]['name'] = request_item['name']
+                if int(db_item["id"]) == int(data_cleaner(request_item["id"], "id")):
+                    db_item_id = db_item["id"] - 1
+                    database[db_item_id]["first_name"] = data_cleaner(request_item["first_name"], "first_name")
+                    database[db_item_id]["last_name"] = data_cleaner(request_item["last_name"], "last_name")
+                    database[db_item_id]["email"] = data_cleaner(request_item["email"], "email")
         return {
-            "message": "Horse list deleted successfully",
+            "message": "data updated successfully",
             "data": database
         }
 
-    # if not of type list, must be type dict/json, meaning only one horse will be updated
+    # if not of type list, must be type dict/json, meaning only one person will be updated
     else:
-        request_id = int(request.json['id'])
+        request_id = data_cleaner(request.json["id"], "id")
         for item in database:
-            if item['id'] == request_id:
-                database[request_id - 1]['name'] = request.json['name']
+            if item["id"] == request_id:
+                database[request_id - 1]["first_name"] = data_cleaner(request.json["first_name"], "first_name")
+                database[request_id - 1]["last_name"] = data_cleaner(request.json["last_name"], "last_name")
+                database[request_id - 1]["email"] = data_cleaner(request.json["email"], "email")
                 break
 
         return {
-            "message": "Horse updated successfully",
+            "message": "data updated successfully",
             "data": database[request_id - 1]
         }
