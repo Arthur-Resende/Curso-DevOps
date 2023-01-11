@@ -8,19 +8,39 @@ app = Flask(__name__)
 app.config['JSON_SORT_KEYS'] = False
 
 # GET request handler to get entire database
-@app.route('/horses', methods=['GET'])
+@app.route('/people', methods=['GET'])
 def get_all_database():
     return database
 
-# GET request handler to get specific horse, by name
-@app.route('/horses/<horse_name>', methods=['GET'])
-def get_specific_horse(horse_name):
+# data cleaner, makes sure data follows specifications
+def data_cleaner(request_data):
+    if isinstance(request_data, str):
+        if request_data.isnumeric():
+            return int(request_data)
+        else:
+            try:
+                return int(float(request_data))
+
+            except:
+                return request_data.replace('_', ' ').replace('-', ' ').lower()
+
+    elif isinstance(request_data, float):
+        return int(request_data)
+    elif isinstance(request_data, int):
+        return request_data
+    else:
+        print("type not supported yet")
+
+# GET request handler to get specific person, by value in field
+@app.route('/people/<key>/<value>', methods=['GET'])
+def get_person_by_field(key, value):
     counter = 0
-    for horse in database:
-        if escape(horse_name).lower() == horse['name'].lower():
-            return database[counter]
+    person_list = []
+    for person in database:
+        if data_cleaner(value) == data_cleaner(person[key]):
+            person_list.append(database[counter])
         counter += 1
-    return "horse not found"
+    return person_list if person_list else f"no person found with that {key.replace('_', ' ')}"
 
 # POST request handler to add one or more horses to database
 @app.route('/horses/add', methods=['POST'])
@@ -43,6 +63,7 @@ def add_horse():
 
     # if not of type list, must be type dict/json, meaning only one horse will be added
     else:
+        print(data_cleaner(request.json['name']))
         horse = {
             "id": len(database) + 1,
             "name": request.json['name']
@@ -76,7 +97,7 @@ def update_horse():
     if isinstance(request.json, list):
         for request_item in request.json:
             for db_item in database:
-                if db_item['id'] == request_item['id']:
+                if int(db_item['id']) == int(request_item['id']):
                     db_item_id = db_item['id'] - 1
                     database[db_item_id]['name'] = request_item['name']
         return {
@@ -86,7 +107,7 @@ def update_horse():
 
     # if not of type list, must be type dict/json, meaning only one horse will be updated
     else:
-        request_id = request.json['id']
+        request_id = int(request.json['id'])
         for item in database:
             if item['id'] == request_id:
                 database[request_id - 1]['name'] = request.json['name']
