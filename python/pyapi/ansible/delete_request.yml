@@ -1,0 +1,24 @@
+---
+- name: Send DELETE request to API
+  hosts: localhost
+  gather_facts: false
+  vars:
+    user: "admin"
+    password: "eyJhbGciOiJIUzI1Ni"
+
+  tasks:
+  - name: send DELETE request to API
+    uri:
+      url: http://localhost:5000/people/delete
+      method: DELETE
+      user: "{{ user }}"
+      password: "{{ password }}"
+      body_format: json
+      body: {"id": 92}
+      return_content: yes
+    register: response
+  
+  - name: Prints response content
+    debug:
+      var: response
+...

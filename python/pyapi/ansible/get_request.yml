@@ -1,0 +1,16 @@
+---
+- name: Send GET request to API
+  hosts: localhost
+  gather_facts: false
+
+  tasks:
+  - name: send GET request to API
+    uri:
+      url: http://localhost:5000/people
+      return_content: yes
+    register: full_db
+  
+  - name: Print content of GET response
+    debug:
+      var: full_db
+...

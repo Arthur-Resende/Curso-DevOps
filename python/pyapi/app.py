@@ -1,11 +1,21 @@
 """Simple flask API, handles requests and sends database items in JSON format as response"""
 
+from functools import wraps
 from flask import Flask, request
+from flask_httpauth import HTTPBasicAuth
 from markupsafe import escape
-from db import database
+import jwt
+from db import database, USER_DATA
 
 app = Flask(__name__)
 app.config["JSON_SORT_KEYS"] = False
+auth = HTTPBasicAuth()
+
+@auth.verify_password
+def verify(user, password):
+    if not (user and password):
+        return False
+    return USER_DATA[user] == password
 
 # GET request handler to get entire database
 @app.route("/people", methods=["GET"])
@@ -14,15 +24,14 @@ def get_all_database():
 
 # data cleaner, makes sure data follows specifications
 def data_cleaner(data, field):
-    match field.lower():
-        case "id":
-            return int(float(data))
-        case "first_name":
-            return str(data).replace('-', ' ').replace('_', ' ').title()
-        case "last_name":
-            return str(data).replace('-', ' ').replace('_', ' ').title()
-        case "email":
-            return str(data).lower()
+    if field.lower() == "id":
+        return int(float(data))
+    elif field.lower() == "first_name":
+        return str(data).replace('-', ' ').replace('_', ' ').title()
+    elif field.lower() == "last_name":
+        return str(data).replace('-', ' ').replace('_', ' ').title()
+    elif field.lower() == "email":
+        return str(data).lower()
 
 # GET request handler to get specific person, by value in field
 @app.route("/people/<key>/<value>", methods=["GET"])
@@ -37,20 +46,21 @@ def get_person_by_field(key, value):
 
 # POST request handler to add one or more horses to database
 @app.route("/people/add", methods=["POST"])
+@auth.login_required
 def add_person():
     # Verify if request is of type list, meaning more than one horse will be added
     if isinstance(request.json, list):
         person_list = []
         counter = 1
         for item in request.json:
-            person.append({
+            person_list.append({
                 "id": len(database) + counter,
                 "first_name": data_cleaner(item["first_name"], "first_name"),
                 "last_name": data_cleaner(item["last_name"], "last_name"),
                 "email": data_cleaner(item["email"], "email")
             })
             counter += 1
-        database.extend(person)
+        database.extend(person_list)
         return {
             "message": "Data added successfully to database",
             "data": person_list
@@ -72,7 +82,8 @@ def add_person():
 
 # DELETE request handler to delete one or more person
 @app.route("/people/delete", methods=["DELETE"])
-def delete_horse():
+@auth.login_required
+def delete_data():
     # Verify if request is of type list, meaning more than one person will be deleted
     if isinstance(request.json, list):
         for item in request.json:
@@ -86,11 +97,14 @@ def delete_horse():
         for item in database:
             if item["id"] == request_id:
                 del database[request_id - 1]
-                return {"message": "Horse deleted successfully"}
+                return {"message": "Data deleted successfully"}
         return {"message": "Id not in database"}
 
+# PUT request handler to update one or more person
 @app.route("/people/update", methods=["PUT"])
+@auth.login_required
 def update_horse():
+    print(request.json)
     # Verify if request is of type list, meaning more than one person will be updated
     if isinstance(request.json, list):
         for request_item in request.json:

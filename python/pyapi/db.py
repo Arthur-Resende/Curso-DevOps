@@ -1,3 +1,4 @@
+USER_DATA = {"admin": "eyJhbGciOiJIUzI1Ni"}
 database = [{
   "id": 1,
   "first_name": "Evangelin",

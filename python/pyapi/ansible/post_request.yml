@@ -1,0 +1,24 @@
+---
+- name: Send POST request to API
+  hosts: localhost
+  gather_facts: false
+  vars:
+    user: "admin"
+    password: "eyJhbGciOiJIUzI1Ni"
+
+  tasks:
+  - name: send POST request to API
+    uri:
+      url: http://localhost:5000/people/add
+      method: POST
+      user: "{{ user }}"
+      password: "{{ password }}"
+      body_format: json
+      body: {"email": "teste@gmail.com", "first_name": "Teste", "last_name": "ola mundo"}
+      return_content: yes
+    register: response
+  
+  - name: Prints response content
+    debug:
+      var: response
+...
