@@ -1,0 +1,49 @@
+---
+- name: Send requests to localhost API
+  hosts: localhost
+  gather_facts: false
+  vars:
+    api_username: admin
+    api_password: eyJhbGciOiJIUzI1Ni
+    api_base_url: http://localhost:5000/people
+
+  tasks:
+  - name: Send POST request
+    uri:
+      url: "{{ api_base_url }}/add"
+      method: POST
+      body: '{"email": "arthurresendefaria@gmail.com.br", "first_name": "Arthur", "last_name": "Resende"}'
+      body_format: json
+      user: "{{ api_username }}"
+      password: "{{ api_password }}"
+    register: post_response
+
+  - name: Send PUT request
+    uri:
+      url: "{{ api_base_url }}/update"
+      method: PUT
+      body: '{"id":"3", "email": "darth.vader@gmail.com.br", "first_name": "Anakin", "last_name": "Skywalker"}'
+      body_format: json
+      user: "{{ api_username }}"
+      password: "{{ api_password }}"
+    register: put_response
+
+  - name: Send DELETE request
+    uri:
+      url: "{{ api_base_url }}/delete"
+      body: '{"id":"4"}'
+      user: "{{ api_username }}"
+      password: "{{ api_password }}"
+      body_format: json
+      method: DELETE
+    register: delete_response
+
+  - name: Send GET request
+    uri:
+      url: "{{ api_base_url }}"
+      method: GET
+    register: get_response
+
+  - name: display contents fo GET request
+    debug:
+      var: get_response

@@ -26,15 +26,14 @@ def get_all_database():
 
 # data cleaner, makes sure data follows specifications
 def data_cleaner(data, field):
-    match field.lower():
-        case "id":
-            return int(float(data))
-        case "first_name":
-            return str(data).replace('-', ' ').replace('_', ' ').title()
-        case "last_name":
-            return str(data).replace('-', ' ').replace('_', ' ').title()
-        case "email":
-            return str(data).lower()
+    if field.lower() == "id":
+        return int(float(data))
+    elif field.lower() == "first_name":
+        return str(data).replace('-', ' ').replace('_', ' ').title()
+    elif field.lower() == "last_name":
+        return str(data).replace('-', ' ').replace('_', ' ').title()
+    elif field.lower() == "email":
+        return str(data).lower()
 
 # GET request handler to get specific person, by value in field
 @app.route("/people/<key>/<value>", methods=["GET"])
