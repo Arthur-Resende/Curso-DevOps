@@ -1,0 +1,24 @@
+---
+- name: Send POST request to API
+  hosts: all
+  gather_facts: false
+
+  tasks:
+  - name: bring variables from file common_vars.yml
+    include_vars: common_vars.yml
+
+  - name: send POST request to API
+    uri:
+      url: '{{ url }}/add'
+      user: '{{ user }}'
+      password: '{{ password }}'
+      method: POST
+      body_format: json
+      body: {"email": "teste@gmail.com", "first_name": "Teste", "last_name": "ola mundo"}
+      return_content: yes
+    register: response
+  
+  - name: Prints response content
+    debug:
+      var: response
+...

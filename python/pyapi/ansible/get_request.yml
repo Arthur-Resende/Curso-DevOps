@@ -1,0 +1,19 @@
+---
+- name: Send GET request to API
+  hosts: all
+  gather_facts: false
+
+  tasks:
+  - name: bring variables from file common_vars.yml
+    include_vars: common_vars.yml
+
+  - name: send GET request to API
+    uri:
+      url: '{{ url }}'
+      return_content: yes
+    register: full_db
+  
+  - name: Print content of GET response
+    debug:
+      var: full_db
+...

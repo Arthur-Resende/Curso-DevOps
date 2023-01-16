@@ -1,0 +1,24 @@
+---
+- name: Send PUT request to API
+  hosts: all
+  gather_facts: false
+
+  tasks:
+  - name: bring variables from file common_vars.yml
+    include_vars: common_vars.yml
+
+  - name: send PUT request to API
+    uri:
+      url: '{{ url }}/update'
+      user: '{{ user }}'
+      password: '{{ password }}'
+      method: PUT
+      body_format: json
+      body: {"id": 82, "email": "testebutchanged@gmail.com", "first_name": "Changed", "last_name": "Tester"}
+      return_content: yes
+    register: response
+  
+  - name: Prints response content
+    debug:
+      var: response
+...

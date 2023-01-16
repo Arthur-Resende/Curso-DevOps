@@ -1,0 +1,24 @@
+---
+- name: Send DELETE request to API
+  hosts: all
+  gather_facts: false
+
+  tasks:
+  - name: bring variables from file common_vars.yml
+    include_vars: common_vars.yml
+
+  - name: send DELETE request to API
+    uri:
+      method: DELETE
+      url: '{{ url }}/delete'
+      user: '{{ user }}'
+      password: '{{ password }}'
+      body_format: json
+      body: {"id": 93}
+      return_content: yes
+    register: response
+  
+  - name: Prints response content
+    debug:
+      var: response
+...
