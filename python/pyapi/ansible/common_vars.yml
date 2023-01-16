@@ -1,0 +1,5 @@
+---
+user: "admin"
+password: "eyJhbGciOiJIUzI1Ni"
+url: http://192.168.18.62:5000/people
+...

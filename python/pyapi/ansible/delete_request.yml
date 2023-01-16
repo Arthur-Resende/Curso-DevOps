@@ -1,20 +1,20 @@
 ---
 - name: Send DELETE request to API
-  hosts: localhost
+  hosts: all
   gather_facts: false
-  vars:
-    user: "admin"
-    password: "eyJhbGciOiJIUzI1Ni"
 
   tasks:
+  - name: bring variables from file common_vars.yml
+    include_vars: common_vars.yml
+
   - name: send DELETE request to API
     uri:
-      url: http://localhost:5000/people/delete
       method: DELETE
-      user: "{{ user }}"
-      password: "{{ password }}"
+      url: '{{ url }}/delete'
+      user: '{{ user }}'
+      password: '{{ password }}'
       body_format: json
-      body: {"id": 92}
+      body: {"id": 93}
       return_content: yes
     register: response
   

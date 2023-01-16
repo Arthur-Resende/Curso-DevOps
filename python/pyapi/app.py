@@ -1,10 +1,7 @@
 """Simple flask API, handles requests and sends database items in JSON format as response"""
 
-from functools import wraps
 from flask import Flask, request
 from flask_httpauth import HTTPBasicAuth
-from markupsafe import escape
-import jwt
 from db import database, USER_DATA
 
 app = Flask(__name__)

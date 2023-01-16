@@ -1,18 +1,18 @@
 ---
 - name: Send PUT request to API
-  hosts: localhost
+  hosts: all
   gather_facts: false
-  vars:
-    user: "admin"
-    password: "eyJhbGciOiJIUzI1Ni"
 
   tasks:
+  - name: bring variables from file common_vars.yml
+    include_vars: common_vars.yml
+
   - name: send PUT request to API
     uri:
-      url: http://localhost:5000/people/update
+      url: '{{ url }}/update'
+      user: '{{ user }}'
+      password: '{{ password }}'
       method: PUT
-      user: "{{ user }}"
-      password: "{{ password }}"
       body_format: json
       body: {"id": 82, "email": "testebutchanged@gmail.com", "first_name": "Changed", "last_name": "Tester"}
       return_content: yes
